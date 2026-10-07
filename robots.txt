@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://streamnerf.github.io/ai-sales-engine/sitemap.xml
