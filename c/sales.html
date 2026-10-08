@@ -1,71 +1,231 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI prompts for sales &amp; clients | Carlsson &amp; Co.</title><meta name="description" content="Prompt packs for sales calls, discovery, objections, proposals and winning clients. Works with ChatGPT, Claude and Gemini."><link rel="canonical" href="https://streamnerf.github.io/ai-sales-engine/c/sales.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Carlsson &amp; Co."><meta property="og:title" content="AI prompts for sales &amp; clients | Carlsson &amp; Co."><meta property="og:description" content="Prompt packs for sales calls, discovery, objections, proposals and winning clients. Works with ChatGPT, Claude and Gemini."><meta property="og:url" content="https://streamnerf.github.io/ai-sales-engine/c/sales.html">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="AI prompts for sales &amp; clients | Carlsson &amp; Co."><meta name="twitter:description" content="Prompt packs for sales calls, discovery, objections, proposals and winning clients. Works with ChatGPT, Claude and Gemini.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f7f3ec;--paper:#fffdf9;--ink:#1d1b18;--mute:#6b645a;--line:#e3dbcd;--acc:#a0522d}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
-h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-.01em;margin:0}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0;border-bottom:1px solid var(--line)}
-.logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;text-decoration:none}nav .links a{margin-left:28px;font-size:14px;text-decoration:none;color:var(--mute)}nav .links a:hover{color:var(--ink)}
-.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
-.hero{padding:110px 0 90px;display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:end}
-.hero h1{font-size:clamp(46px,6vw,78px);line-height:1.02;margin:18px 0 0}.hero h1 em{color:var(--acc)}
-.hero p{color:var(--mute);font-size:18px;margin:0 0 24px}
-.btn{display:inline-block;padding:14px 26px;border:1px solid var(--ink);text-decoration:none;font-size:14px;letter-spacing:.04em;transition:.2s}.btn:hover{background:var(--ink);color:var(--bg)}
-.btn.solid{background:var(--ink);color:var(--bg)}.btn.solid:hover{background:var(--acc);border-color:var(--acc)}
-section{padding:80px 0;border-top:1px solid var(--line)}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:44px;gap:30px}.head h2{font-size:46px}.head p{color:var(--mute);max-width:420px;margin:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.card{background:var(--paper);padding:34px 30px 30px;display:flex;flex-direction:column;transition:background .25s}.card:hover{background:#fff}
-.meta{display:flex;justify-content:space-between;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}.price{color:var(--ink)}
-.card h3{font-size:30px;line-height:1.1;margin:22px 0 8px}.pitch{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;margin:0 0 12px;color:var(--acc)}
-.desc{font-size:14.5px;color:var(--mute);margin:0 0 20px}
-blockquote{margin:0 0 26px;padding:14px 0 0;border-top:1px dashed var(--line);font-size:13.5px;color:#4a453d;font-family:ui-monospace,Menlo,monospace;line-height:1.55;flex:1}
-.buy{align-self:flex-start;font-size:14px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:2px;transition:.2s}.buy:hover{color:var(--acc);border-color:var(--acc)}
-.bundle{background:var(--ink);color:var(--bg);padding:70px 60px;display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center}
-.bundle h2{font-size:52px;line-height:1.05;margin:14px 0}.bundle p{color:#cfc7b8}.bundle .kicker{color:#d9a37f}
-.bprice{font-family:'Cormorant Garamond',serif;font-size:72px;line-height:1}.bprice s{font-size:30px;color:#8e877b;margin-left:12px}
-.bundle .btn{border-color:var(--bg);color:var(--bg);margin-top:24px}.bundle .btn:hover{background:var(--bg);color:var(--ink)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.steps div{border-top:1px solid var(--ink);padding-top:18px}.steps b{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;display:block;margin-bottom:6px}.steps p{color:var(--mute);margin:0}
-.faq{display:grid;grid-template-columns:1fr 2fr;gap:60px}details{border-bottom:1px solid var(--line);padding:20px 0}summary{cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:23px;list-style:none;display:flex;justify-content:space-between}summary::after{content:'+';color:var(--acc)}details[open] summary::after{content:'–'}details p{color:var(--mute);margin:10px 0 0;max-width:620px}
-footer{border-top:1px solid var(--line);padding:40px 0 60px;display:flex;justify-content:space-between;font-size:13px;color:var(--mute)}
-@media(max-width:820px){.hero,.bundle,.faq{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.bundle{padding:44px 28px}.head{display:block}.head p{margin-top:12px}.hero{padding:70px 0 60px}}
-
-.actions{display:flex;gap:22px;align-items:center}.prev{background:none;border:0;padding:0 0 2px;font:inherit;font-size:14px;color:var(--mute);cursor:pointer;border-bottom:1px solid var(--line)}.prev:hover{color:var(--acc);border-color:var(--acc)}
-dialog{border:0;padding:0;max-width:640px;width:calc(100% - 40px);background:var(--paper);color:var(--ink);box-shadow:0 30px 80px rgba(29,27,24,.25)}dialog::backdrop{background:rgba(29,27,24,.45)}
-.mod{padding:44px 44px 36px}.mod h3{font-size:34px;margin:10px 0 6px}.mod ol{padding:0;margin:24px 0;list-style:none;counter-reset:p}.mod li{border-top:1px solid var(--line);padding:16px 0;counter-increment:p}.mod li b{display:block;font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:500;margin-bottom:4px}.mod li b::before{content:counter(p,decimal-leading-zero)'  ';color:var(--acc)}.mod li p{margin:0;font:13.5px/1.6 ui-monospace,Menlo,monospace;color:#4a453d}
-.mod .x{position:absolute;top:14px;right:18px;background:none;border:0;font-size:28px;cursor:pointer;color:var(--mute)}.mod .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:13px;color:var(--mute)}
-.sets{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}.set{border:1px solid var(--ink);padding:36px 32px;background:var(--paper);display:flex;flex-direction:column}.set h3{font-size:34px;margin:16px 0 8px}.set ul{list-style:none;padding:0;margin:8px 0 24px;flex:1}.set li{border-bottom:1px solid var(--line);padding:8px 0;font-size:14.5px;display:flex;justify-content:space-between}.set li span{color:var(--mute)}.set .bp{font-family:'Cormorant Garamond',serif;font-size:46px;line-height:1;margin-bottom:18px}.set .bp s{font-size:22px;color:var(--mute);margin-left:10px}
-.about{display:grid;grid-template-columns:1fr 1.6fr;gap:60px}.about p{font-family:'Cormorant Garamond',serif;font-size:23px;line-height:1.5;margin:0 0 18px}.about .sig{font-family:Inter,sans-serif;font-size:14px;color:var(--mute)}
-.glist{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.glist a{background:var(--paper);padding:30px;text-decoration:none;display:block}.glist a:hover{background:#fff}.glist h3{font-size:26px;line-height:1.15;margin:12px 0 10px}.glist p{color:var(--mute);font-size:14.5px;margin:0}
-article.guide{max-width:700px;margin:0 auto;padding:80px 0}article.guide h1{font-size:clamp(40px,5vw,60px);line-height:1.05;margin:16px 0 22px}article.guide .lede{font-family:'Cormorant Garamond',serif;font-size:23px;color:var(--mute);line-height:1.45}article.guide h2{font-size:32px;margin:46px 0 12px}article.guide p{font-size:17px}
-article.guide pre{white-space:pre-wrap;background:var(--paper);border-left:2px solid var(--acc);padding:18px 22px;font:14px/1.6 ui-monospace,Menlo,monospace;color:#4a453d;margin:16px 0}
-.filters{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;margin:0 0 30px;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:16px 0}.filters button,.filters a{background:none;border:0;padding:4px 0;font:inherit;font-size:14px;color:var(--mute);cursor:pointer;text-decoration:none;border-bottom:1px solid transparent}.filters button.on,.filters button:hover{color:var(--ink);border-color:var(--acc)}.filters input{margin-left:auto;min-width:240px;padding:10px 14px;border:1px solid var(--line);background:var(--paper);font:inherit;font-size:14px;color:var(--ink)}.filters input:focus{outline:0;border-color:var(--ink)}.card .cat{color:var(--acc)}.empty{display:none;padding:40px 0;color:var(--mute)}.catlinks{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.catlinks a{background:var(--paper);padding:22px 24px;text-decoration:none;font-family:"Cormorant Garamond",serif;font-size:24px}.catlinks a span{display:block;font-family:Inter,sans-serif;font-size:13px;color:var(--mute)}.catlinks a:hover{background:#fff}
-.related{margin-top:60px;border-top:1px solid var(--ink);padding-top:24px}.related a.r{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:16px 0;text-decoration:none}.related a.r b{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500}.related a.r span{color:var(--acc);font-size:14px}
-.buy.soon,.buy.soon:hover{color:var(--mute);border-bottom:1px dashed var(--line);cursor:default}
-.btn.soon,.btn.soon:hover{background:transparent;color:var(--mute);border-color:var(--line);cursor:default}.bundle .btn.soon,.bundle .btn.soon:hover{color:#8e877b;border-color:#4a453d;background:transparent}
-.tag{display:inline-block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:2px 8px;margin-left:10px;line-height:1.5;vertical-align:1px}
-.card .meta>span:first-child{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}.card .meta .tag{margin-left:0}
-.card.is-soon h3,.card.is-soon .pitch{opacity:.78}.set.is-soon{border-color:var(--line)}.set>.kicker{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}.set .tag{margin-left:0}
-.filters button.avail{margin-left:auto}.filters button.avail::before{content:'';display:inline-block;width:9px;height:9px;border:1px solid var(--mute);margin-right:8px;vertical-align:0}.filters button.avail.on::before{background:var(--acc);border-color:var(--acc)}.filters button.avail+input{margin-left:0}
-footer a{text-decoration:none;margin-left:20px}footer a:hover{color:var(--ink)}
-@media(max-width:820px){.about{grid-template-columns:1fr}.mod{padding:36px 24px 28px}}</style>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI prompts for Sales &amp; Clients | Carlsson &amp; Co.</title>
+<meta name="description" content="Prompt packs for sales calls, discovery, objections, proposals and winning clients. Each is a short PDF with 15 to 20 prompts. Works with ChatGPT, Claude…">
+<link rel="canonical" href="https://streamnerf.github.io/ai-sales-engine/c/sales.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Carlsson &amp; Co.">
+<meta property="og:title" content="AI prompts for Sales &amp; Clients | Carlsson &amp; Co.">
+<meta property="og:description" content="Prompt packs for sales calls, discovery, objections, proposals and winning clients. Each is a short PDF with 15 to 20 prompts. Works with ChatGPT, Claude…">
+<meta property="og:url" content="https://streamnerf.github.io/ai-sales-engine/c/sales.html">
+<meta property="og:image" content="https://streamnerf.github.io/ai-sales-engine/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Carlsson &amp; Co. A library of working prompts.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI prompts for Sales &amp; Clients | Carlsson &amp; Co.">
+<meta name="twitter:description" content="Prompt packs for sales calls, discovery, objections, proposals and winning clients. Each is a short PDF with 15 to 20 prompts. Works with ChatGPT, Claude…">
+<meta name="twitter:image" content="https://streamnerf.github.io/ai-sales-engine/og.png">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23f7f3ec' width='32' height='32'/%3E%3Crect fill='%23a0522d' width='32' height='3'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='16' fill='%231d1b18'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://streamnerf.github.io/ai-sales-engine/"}, {"@type": "ListItem", "position": 2, "name": "Categories", "item": "https://streamnerf.github.io/ai-sales-engine/c/"}, {"@type": "ListItem", "position": 3, "name": "Sales & Clients", "item": "https://streamnerf.github.io/ai-sales-engine/c/sales.html"}]}]}</script>
 <!-- Analytics (cookieless) — not active. Uncomment ONE after creating an account.
 GoatCounter:  <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 Plausible:    <script defer data-domain="streamnerf.github.io" src="https://plausible.io/js/script.js"></script>
 -->
-</head><body><div class="wrap">
-<nav><a class="logo" href="../">Carlsson &amp; Co.</a><div class="links"><a href="../#library">Library</a><a href="../c/">Categories</a><a href="../#sets">Sets</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></div></nav>
-<header class="hero" style="grid-template-columns:1fr;padding-bottom:50px"><div><span class="kicker"><a href="./" style="text-decoration:none">Categories</a></span><h1>Sales &amp; Clients</h1><p style="max-width:640px">Prompt packs for sales calls, discovery, objections, proposals and winning clients. Each is a short PDF with 15 to 20 prompts.</p></div></header>
-<section style="padding-top:0;border:0"><div class="grid"><article id="client-magnet" class="card" data-cat="sales" data-av="1" data-q="the freelancer&#x27;s pipeline find, pitch and keep better clients. 18 prompts for freelancers and consultants: positioning, cold outreach, proposals, pricing conversations, and turning one-off jobs into retainers. practical scripts you adapt to your own services. for designers, writers, developers, marketers and anyone selling their skills. sales &amp; clients"><div class="meta"><span><span class="cat">Sales &amp; Clients</span></span><span>18 prompts · <span class="price">$24</span></span></div>
-<h3>The Freelancer&#x27;s Pipeline</h3><p class="pitch">Find, pitch and keep better clients.</p><p class="desc">18 prompts for freelancers and consultants: positioning, cold outreach, proposals, pricing conversations, and turning one-off jobs into retainers.</p>
-<blockquote>“I offer [services] and have experience in [industries/projects]. Suggest 5 niche positions (who + problem +…”</blockquote><div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/unlwu" data-slug="client-magnet">Buy · $24</a><button class="prev" data-p="client-magnet">Preview</button></div></article>
-<article id="sales-call-playbook" class="card is-soon" data-cat="sales" data-av="0" data-q="the sales call playbook discovery, demos, objections and follow-ups that feel like conversations. 18 prompts for sales calls: research, call agendas, discovery questions, demo flow, objection handling, follow-up emails, proposals and pipeline reviews. for founders, freelancers and b2b salespeople. sales &amp; clients"><div class="meta"><span><span class="cat">Sales &amp; Clients</span><span class="tag">Coming soon</span></span><span>18 prompts · <span class="price">$24</span></span></div>
-<h3>The Sales Call Playbook</h3><p class="pitch">Discovery, demos, objections and follow-ups that feel like conversations.</p><p class="desc">18 prompts for sales calls: research, call agendas, discovery questions, demo flow, objection handling, follow-up emails, proposals and pipeline reviews.</p>
-<blockquote>“From this public info about [company] [paste], summarise what they do, likely priorities, possible pain points our…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="sales-call-playbook" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="sales-call-playbook">Preview</button></div></article>
-</div></section>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap bar-inner"><a class="logo" href="../">Carlsson &amp; Co.</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary"><a href="../#library">Library</a><a href="../c/" aria-current="page">Categories</a><a href="../#sets">Sets</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></nav></div></header>
+<main id="main">
+<div class="wrap">
+<header class="page-hero"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="./">Categories</a></li><li aria-current="page">Sales &amp; Clients</li></ol></nav>
+<p class="kicker">Category</p><h1>Sales &amp; Clients</h1><p>Prompt packs for sales calls, discovery, objections, proposals and winning clients. Each is a short PDF with 15 to 20 prompts. Works with ChatGPT, Claude and Gemini.</p></header>
+<section class="tight"><div class="grid"><article class="card" id="client-magnet" data-cat="sales" data-av="1" data-q="the freelancer&#x27;s pipeline find, pitch and keep better clients. 18 prompts for freelancers and consultants: positioning, cold outreach, proposals, pricing conversations, and turning one-off jobs into retainers. practical scripts you adapt to your own services. for designers, writers, developers, marketers and anyone selling their skills. sales &amp; clients niche finder positioning one-liner positioning portfolio case study positioning service packages positioning prospect list outreach cold email outreach follow-up outreach linkedin message outreach warm network ask outreach discovery call questions win the work proposal win the work price conversation win the work upwork/marketplace pitch win the work onboarding email keep clients scope creep reply keep clients retainer pitch keep clients testimonial request keep clients referral ask keep clients">
+<div class="meta"><span><a class="cat" href="../c/sales.html">Sales &amp; Clients</a></span><span>18 prompts · <span class="price">$24</span></span></div>
+<h3><a href="../p/client-magnet/">The Freelancer's Pipeline</a></h3>
+<p class="pitch">Find, pitch and keep better clients.</p>
+<p class="desc">18 prompts for freelancers and consultants: positioning, cold outreach, proposals, pricing conversations, and turning one-off jobs into retainers.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>I offer [services] and have experience in [industries/projects]. Suggest 5 niche positions (who + problem +…</blockquote>
+<div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/unlwu" data-buy="client-magnet">Buy · $24</a><button type="button" class="prev" data-p="client-magnet" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="sales-call-playbook" data-cat="sales" data-av="0" data-q="the sales call playbook discovery, demos, objections and follow-ups that feel like conversations. 18 prompts for sales calls: research, call agendas, discovery questions, demo flow, objection handling, follow-up emails, proposals and pipeline reviews. for founders, freelancers and b2b salespeople. sales &amp; clients prospect research brief prepare call agenda prepare cold opener prepare discovery questions discover pain to value discover stakeholder map discover demo flow present value story present pricing conversation present objection handler objections objection prep sheet objections competitor comparison objections recap email follow up proposal outline follow up gone-quiet follow-up follow up close or release follow up lost-deal review follow up pipeline review follow up">
+<div class="meta"><span><a class="cat" href="../c/sales.html">Sales &amp; Clients</a><span class="tag">Coming soon</span></span><span>18 prompts · <span class="price">$24</span></span></div>
+<h3><a href="../p/sales-call-playbook/">The Sales Call Playbook</a></h3>
+<p class="pitch">Discovery, demos, objections and follow-ups that feel like conversations.</p>
+<p class="desc">18 prompts for sales calls: research, call agendas, discovery questions, demo flow, objection handling, follow-up emails, proposals and pipeline reviews.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>From this public info about [company] [paste], summarise what they do, likely priorities, possible pain points our…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="sales-call-playbook">Coming soon</span><button type="button" class="prev" data-p="sales-call-playbook" aria-haspopup="dialog">Preview</button></div>
+</article></div></section>
+
 <section><div class="head"><h2>Other categories</h2></div><div class="catlinks"><a href="marketing.html">Marketing &amp; Content</a><a href="business.html">Business &amp; Operations</a><a href="ecommerce.html">E-commerce</a><a href="career.html">Career &amp; Learning</a><a href="creative.html">Writing &amp; Creative</a><a href="tech.html">Tech &amp; Data</a><a href="pros.html">For Professionals</a><a href="life.html">Home &amp; Life</a></div></section>
-<footer><span>© 2026 Carlsson &amp; Co.</span><span><a href="../#library">Library</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></span><span>Payments handled securely by Gumroad.</span></footer>
-</div></body></html>
+</div>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Carlsson &amp; Co.</span><nav aria-label="Footer"><a href="../#library">Library</a><a href="../c/">Categories</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></nav><span>Payments handled securely by Gumroad.</span></div></footer>
+<dialog id="pv" aria-labelledby="pv-title">
+<div class="mod">
+<div class="mod-bar"><p class="kicker">Preview</p><button type="button" class="x" aria-label="Close preview">Close</button></div>
+<h2 id="pv-title"></h2>
+<p class="pitch" id="pv-pitch"></p>
+<ol id="pv-list"></ol>
+<div class="mod-foot"><p id="pv-meta"></p><div class="mod-actions">
+<a class="btn solid" id="pv-buy" hidden>Buy</a>
+<span class="btn soon" id="pv-soon" hidden>Coming soon</span>
+<a class="btn" id="pv-more" href="../">View the pack</a>
+</div></div>
+</div></dialog><script type="application/json" id="preview-data">{"client-magnet": {"t": "The Freelancer's Pipeline", "p": 24, "n": 18, "u": "https://mcarlsso.gumroad.com/l/unlwu", "q": [["Niche finder", "I offer [services] and have experience in [industries/projects]. Suggest 5 niche positions (who + problem + result), and rate each on demand, competition and fit with my experience."], ["One-liner", "Write 10 versions of 'I help [who] [achieve what] by [how]' for my freelance business. Make them specific and free of buzzwords."], ["Portfolio case study", "Turn this project into a short case study: client [type], problem [x], what I did [y], result [z]. Structure: challenge, approach, outcome, quote placeholder."]]}, "sales-call-playbook": {"t": "The Sales Call Playbook", "p": 24, "n": 18, "u": "", "q": [["Prospect research brief", "From this public info about [company] [paste], summarise what they do, likely priorities, possible pain points our [offer] could address, and 3 smart questions."], ["Call agenda", "Write a short agenda for a [minutes]-minute discovery call with [prospect] that I can send in advance and use to open the call."], ["Cold opener", "Write 5 ways to open a cold call to [role] at [company type] that earn 30 seconds without sounding scripted."]]}}</script>
+<script>
+(function () {
+  var bar = document.querySelector(".bar");
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("site-nav");
+
+  if (toggle && bar && nav) {
+    function setOpen(open) {
+      bar.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.textContent = open ? "Close" : "Menu";
+    }
+    toggle.addEventListener("click", function () {
+      setOpen(!bar.classList.contains("is-open"));
+    });
+    nav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Escape" || !bar.classList.contains("is-open")) return;
+      if (document.querySelector("dialog[open]")) return;
+      setOpen(false);
+      toggle.focus();
+    });
+  }
+
+  var lib = document.getElementById("lib");
+  if (lib) {
+    var cat = "all";
+    var onlyAvail = false;
+    var touched = false;
+    var query = document.getElementById("q");
+    var buttons = Array.prototype.slice.call(document.querySelectorAll(".filters [data-c]"));
+    var avail = document.querySelector(".filters [data-av]");
+    var allcard = document.getElementById("allcard");
+    var none = document.getElementById("none");
+    var status = document.getElementById("status");
+
+    function run() {
+      var words = query.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      var shown = 0;
+      lib.querySelectorAll(".card[data-cat]").forEach(function (card) {
+        var text = card.getAttribute("data-q") || "";
+        var ok = (cat === "all" || card.getAttribute("data-cat") === cat)
+          && (!onlyAvail || card.getAttribute("data-av") === "1")
+          && words.every(function (word) { return text.indexOf(word) !== -1; });
+        card.hidden = !ok;
+        if (ok) shown += 1;
+      });
+      if (allcard) allcard.hidden = !(cat === "all" && words.length === 0 && !onlyAvail);
+      if (none) none.hidden = shown !== 0;
+      if (status && touched) {
+        status.textContent = shown === 0
+          ? "No packs match."
+          : shown + (shown === 1 ? " pack shown." : " packs shown.");
+      }
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        touched = true;
+        cat = button.getAttribute("data-c");
+        buttons.forEach(function (other) {
+          var on = other === button;
+          other.classList.toggle("on", on);
+          other.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, "", cat === "all" ? window.location.pathname + window.location.search : "#cat=" + cat);
+        }
+        run();
+      });
+    });
+    if (query) query.addEventListener("input", function () { touched = true; run(); });
+    if (avail) {
+      avail.addEventListener("click", function () {
+        touched = true;
+        onlyAvail = !onlyAvail;
+        avail.classList.toggle("on", onlyAvail);
+        avail.setAttribute("aria-pressed", onlyAvail ? "true" : "false");
+        run();
+      });
+    }
+    var hash = window.location.hash.match(/^#cat=([a-z0-9-]+)$/);
+    if (hash) {
+      var initial = buttons.filter(function (button) {
+        return button.getAttribute("data-c") === hash[1];
+      })[0];
+      if (initial) initial.click();
+    }
+  }
+
+  var dialog = document.getElementById("pv");
+  var dataEl = document.getElementById("preview-data");
+  if (!dialog || !dataEl) return;
+
+  var previews = JSON.parse(dataEl.textContent);
+  var opener = null;
+  var title = document.getElementById("pv-title");
+  var pitch = document.getElementById("pv-pitch");
+  var list = document.getElementById("pv-list");
+  var meta = document.getElementById("pv-meta");
+  var buy = document.getElementById("pv-buy");
+  var soon = document.getElementById("pv-soon");
+  var more = document.getElementById("pv-more");
+  var root = document.body.getAttribute("data-root") || "./";
+
+  function openPreview(slug, trigger) {
+    var item = previews[slug];
+    if (!item) return;
+    title.textContent = item.t;
+    pitch.textContent = item.q.length + " of the " + item.n + " prompts in this pack";
+    list.replaceChildren();
+    item.q.forEach(function (row) {
+      var li = document.createElement("li");
+      var name = document.createElement("b");
+      var text = document.createElement("p");
+      name.textContent = row[0];
+      text.textContent = row[1];
+      li.append(name, text);
+      list.append(li);
+    });
+    meta.textContent = item.n + " prompts in the PDF.";
+    more.href = root + "p/" + slug + "/";
+    if (item.u) {
+      buy.href = item.u;
+      buy.textContent = "Buy · $" + item.p;
+      buy.setAttribute("data-buy", slug);
+      buy.hidden = false;
+      soon.hidden = true;
+    } else {
+      buy.hidden = true;
+      buy.removeAttribute("href");
+      soon.hidden = false;
+    }
+    opener = trigger || null;
+    dialog.showModal();
+    var closeButton = dialog.querySelector(".x");
+    if (closeButton) closeButton.focus();
+  }
+
+  document.addEventListener("click", function (event) {
+    var button = event.target.closest(".prev");
+    if (!button) return;
+    openPreview(button.getAttribute("data-p"), button);
+  });
+  dialog.querySelector(".x").addEventListener("click", function () { dialog.close(); });
+  dialog.addEventListener("click", function (event) {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener("close", function () {
+    if (opener) opener.focus();
+  });
+})();
+
+</script>
+</body>
+</html>

@@ -1,92 +1,287 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI prompts for marketing &amp; content | Carlsson &amp; Co.</title><meta name="description" content="Prompt packs for social media, short video, podcasts, SEO blogging, email, copywriting and branding. Works with ChatGPT, Claude and Gemini."><link rel="canonical" href="https://streamnerf.github.io/ai-sales-engine/c/marketing.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Carlsson &amp; Co."><meta property="og:title" content="AI prompts for marketing &amp; content | Carlsson &amp; Co."><meta property="og:description" content="Prompt packs for social media, short video, podcasts, SEO blogging, email, copywriting and branding. Works with ChatGPT, Claude and Gemini."><meta property="og:url" content="https://streamnerf.github.io/ai-sales-engine/c/marketing.html">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="AI prompts for marketing &amp; content | Carlsson &amp; Co."><meta name="twitter:description" content="Prompt packs for social media, short video, podcasts, SEO blogging, email, copywriting and branding. Works with ChatGPT, Claude and Gemini.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f7f3ec;--paper:#fffdf9;--ink:#1d1b18;--mute:#6b645a;--line:#e3dbcd;--acc:#a0522d}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
-h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-.01em;margin:0}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0;border-bottom:1px solid var(--line)}
-.logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;text-decoration:none}nav .links a{margin-left:28px;font-size:14px;text-decoration:none;color:var(--mute)}nav .links a:hover{color:var(--ink)}
-.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
-.hero{padding:110px 0 90px;display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:end}
-.hero h1{font-size:clamp(46px,6vw,78px);line-height:1.02;margin:18px 0 0}.hero h1 em{color:var(--acc)}
-.hero p{color:var(--mute);font-size:18px;margin:0 0 24px}
-.btn{display:inline-block;padding:14px 26px;border:1px solid var(--ink);text-decoration:none;font-size:14px;letter-spacing:.04em;transition:.2s}.btn:hover{background:var(--ink);color:var(--bg)}
-.btn.solid{background:var(--ink);color:var(--bg)}.btn.solid:hover{background:var(--acc);border-color:var(--acc)}
-section{padding:80px 0;border-top:1px solid var(--line)}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:44px;gap:30px}.head h2{font-size:46px}.head p{color:var(--mute);max-width:420px;margin:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.card{background:var(--paper);padding:34px 30px 30px;display:flex;flex-direction:column;transition:background .25s}.card:hover{background:#fff}
-.meta{display:flex;justify-content:space-between;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}.price{color:var(--ink)}
-.card h3{font-size:30px;line-height:1.1;margin:22px 0 8px}.pitch{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;margin:0 0 12px;color:var(--acc)}
-.desc{font-size:14.5px;color:var(--mute);margin:0 0 20px}
-blockquote{margin:0 0 26px;padding:14px 0 0;border-top:1px dashed var(--line);font-size:13.5px;color:#4a453d;font-family:ui-monospace,Menlo,monospace;line-height:1.55;flex:1}
-.buy{align-self:flex-start;font-size:14px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:2px;transition:.2s}.buy:hover{color:var(--acc);border-color:var(--acc)}
-.bundle{background:var(--ink);color:var(--bg);padding:70px 60px;display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center}
-.bundle h2{font-size:52px;line-height:1.05;margin:14px 0}.bundle p{color:#cfc7b8}.bundle .kicker{color:#d9a37f}
-.bprice{font-family:'Cormorant Garamond',serif;font-size:72px;line-height:1}.bprice s{font-size:30px;color:#8e877b;margin-left:12px}
-.bundle .btn{border-color:var(--bg);color:var(--bg);margin-top:24px}.bundle .btn:hover{background:var(--bg);color:var(--ink)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.steps div{border-top:1px solid var(--ink);padding-top:18px}.steps b{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;display:block;margin-bottom:6px}.steps p{color:var(--mute);margin:0}
-.faq{display:grid;grid-template-columns:1fr 2fr;gap:60px}details{border-bottom:1px solid var(--line);padding:20px 0}summary{cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:23px;list-style:none;display:flex;justify-content:space-between}summary::after{content:'+';color:var(--acc)}details[open] summary::after{content:'–'}details p{color:var(--mute);margin:10px 0 0;max-width:620px}
-footer{border-top:1px solid var(--line);padding:40px 0 60px;display:flex;justify-content:space-between;font-size:13px;color:var(--mute)}
-@media(max-width:820px){.hero,.bundle,.faq{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.bundle{padding:44px 28px}.head{display:block}.head p{margin-top:12px}.hero{padding:70px 0 60px}}
-
-.actions{display:flex;gap:22px;align-items:center}.prev{background:none;border:0;padding:0 0 2px;font:inherit;font-size:14px;color:var(--mute);cursor:pointer;border-bottom:1px solid var(--line)}.prev:hover{color:var(--acc);border-color:var(--acc)}
-dialog{border:0;padding:0;max-width:640px;width:calc(100% - 40px);background:var(--paper);color:var(--ink);box-shadow:0 30px 80px rgba(29,27,24,.25)}dialog::backdrop{background:rgba(29,27,24,.45)}
-.mod{padding:44px 44px 36px}.mod h3{font-size:34px;margin:10px 0 6px}.mod ol{padding:0;margin:24px 0;list-style:none;counter-reset:p}.mod li{border-top:1px solid var(--line);padding:16px 0;counter-increment:p}.mod li b{display:block;font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:500;margin-bottom:4px}.mod li b::before{content:counter(p,decimal-leading-zero)'  ';color:var(--acc)}.mod li p{margin:0;font:13.5px/1.6 ui-monospace,Menlo,monospace;color:#4a453d}
-.mod .x{position:absolute;top:14px;right:18px;background:none;border:0;font-size:28px;cursor:pointer;color:var(--mute)}.mod .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:13px;color:var(--mute)}
-.sets{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}.set{border:1px solid var(--ink);padding:36px 32px;background:var(--paper);display:flex;flex-direction:column}.set h3{font-size:34px;margin:16px 0 8px}.set ul{list-style:none;padding:0;margin:8px 0 24px;flex:1}.set li{border-bottom:1px solid var(--line);padding:8px 0;font-size:14.5px;display:flex;justify-content:space-between}.set li span{color:var(--mute)}.set .bp{font-family:'Cormorant Garamond',serif;font-size:46px;line-height:1;margin-bottom:18px}.set .bp s{font-size:22px;color:var(--mute);margin-left:10px}
-.about{display:grid;grid-template-columns:1fr 1.6fr;gap:60px}.about p{font-family:'Cormorant Garamond',serif;font-size:23px;line-height:1.5;margin:0 0 18px}.about .sig{font-family:Inter,sans-serif;font-size:14px;color:var(--mute)}
-.glist{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.glist a{background:var(--paper);padding:30px;text-decoration:none;display:block}.glist a:hover{background:#fff}.glist h3{font-size:26px;line-height:1.15;margin:12px 0 10px}.glist p{color:var(--mute);font-size:14.5px;margin:0}
-article.guide{max-width:700px;margin:0 auto;padding:80px 0}article.guide h1{font-size:clamp(40px,5vw,60px);line-height:1.05;margin:16px 0 22px}article.guide .lede{font-family:'Cormorant Garamond',serif;font-size:23px;color:var(--mute);line-height:1.45}article.guide h2{font-size:32px;margin:46px 0 12px}article.guide p{font-size:17px}
-article.guide pre{white-space:pre-wrap;background:var(--paper);border-left:2px solid var(--acc);padding:18px 22px;font:14px/1.6 ui-monospace,Menlo,monospace;color:#4a453d;margin:16px 0}
-.filters{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;margin:0 0 30px;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:16px 0}.filters button,.filters a{background:none;border:0;padding:4px 0;font:inherit;font-size:14px;color:var(--mute);cursor:pointer;text-decoration:none;border-bottom:1px solid transparent}.filters button.on,.filters button:hover{color:var(--ink);border-color:var(--acc)}.filters input{margin-left:auto;min-width:240px;padding:10px 14px;border:1px solid var(--line);background:var(--paper);font:inherit;font-size:14px;color:var(--ink)}.filters input:focus{outline:0;border-color:var(--ink)}.card .cat{color:var(--acc)}.empty{display:none;padding:40px 0;color:var(--mute)}.catlinks{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.catlinks a{background:var(--paper);padding:22px 24px;text-decoration:none;font-family:"Cormorant Garamond",serif;font-size:24px}.catlinks a span{display:block;font-family:Inter,sans-serif;font-size:13px;color:var(--mute)}.catlinks a:hover{background:#fff}
-.related{margin-top:60px;border-top:1px solid var(--ink);padding-top:24px}.related a.r{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:16px 0;text-decoration:none}.related a.r b{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500}.related a.r span{color:var(--acc);font-size:14px}
-.buy.soon,.buy.soon:hover{color:var(--mute);border-bottom:1px dashed var(--line);cursor:default}
-.btn.soon,.btn.soon:hover{background:transparent;color:var(--mute);border-color:var(--line);cursor:default}.bundle .btn.soon,.bundle .btn.soon:hover{color:#8e877b;border-color:#4a453d;background:transparent}
-.tag{display:inline-block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:2px 8px;margin-left:10px;line-height:1.5;vertical-align:1px}
-.card .meta>span:first-child{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}.card .meta .tag{margin-left:0}
-.card.is-soon h3,.card.is-soon .pitch{opacity:.78}.set.is-soon{border-color:var(--line)}.set>.kicker{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}.set .tag{margin-left:0}
-.filters button.avail{margin-left:auto}.filters button.avail::before{content:'';display:inline-block;width:9px;height:9px;border:1px solid var(--mute);margin-right:8px;vertical-align:0}.filters button.avail.on::before{background:var(--acc);border-color:var(--acc)}.filters button.avail+input{margin-left:0}
-footer a{text-decoration:none;margin-left:20px}footer a:hover{color:var(--ink)}
-@media(max-width:820px){.about{grid-template-columns:1fr}.mod{padding:36px 24px 28px}}</style>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI prompts for Marketing &amp; Content | Carlsson &amp; Co.</title>
+<meta name="description" content="Prompt packs for social media, short video, podcasts, SEO blogging, email, copywriting and branding. Each is a short PDF with 15 to 20 prompts. Works…">
+<link rel="canonical" href="https://streamnerf.github.io/ai-sales-engine/c/marketing.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Carlsson &amp; Co.">
+<meta property="og:title" content="AI prompts for Marketing &amp; Content | Carlsson &amp; Co.">
+<meta property="og:description" content="Prompt packs for social media, short video, podcasts, SEO blogging, email, copywriting and branding. Each is a short PDF with 15 to 20 prompts. Works…">
+<meta property="og:url" content="https://streamnerf.github.io/ai-sales-engine/c/marketing.html">
+<meta property="og:image" content="https://streamnerf.github.io/ai-sales-engine/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Carlsson &amp; Co. A library of working prompts.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI prompts for Marketing &amp; Content | Carlsson &amp; Co.">
+<meta name="twitter:description" content="Prompt packs for social media, short video, podcasts, SEO blogging, email, copywriting and branding. Each is a short PDF with 15 to 20 prompts. Works…">
+<meta name="twitter:image" content="https://streamnerf.github.io/ai-sales-engine/og.png">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23f7f3ec' width='32' height='32'/%3E%3Crect fill='%23a0522d' width='32' height='3'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='16' fill='%231d1b18'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://streamnerf.github.io/ai-sales-engine/"}, {"@type": "ListItem", "position": 2, "name": "Categories", "item": "https://streamnerf.github.io/ai-sales-engine/c/"}, {"@type": "ListItem", "position": 3, "name": "Marketing & Content", "item": "https://streamnerf.github.io/ai-sales-engine/c/marketing.html"}]}]}</script>
 <!-- Analytics (cookieless) — not active. Uncomment ONE after creating an account.
 GoatCounter:  <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 Plausible:    <script defer data-domain="streamnerf.github.io" src="https://plausible.io/js/script.js"></script>
 -->
-</head><body><div class="wrap">
-<nav><a class="logo" href="../">Carlsson &amp; Co.</a><div class="links"><a href="../#library">Library</a><a href="../c/">Categories</a><a href="../#sets">Sets</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></div></nav>
-<header class="hero" style="grid-template-columns:1fr;padding-bottom:50px"><div><span class="kicker"><a href="./" style="text-decoration:none">Categories</a></span><h1>Marketing &amp; Content</h1><p style="max-width:640px">Prompt packs for social media, short video, podcasts, SEO blogging, email, copywriting and branding. Each is a short PDF with 15 to 20 prompts.</p></div></header>
-<section style="padding-top:0;border:0"><div class="grid"><article id="social-content-studio" class="card" data-cat="marketing" data-av="1" data-q="the content calendar kit a month of posts planned in an afternoon. 18 prompts that turn one topic into a month of posts for instagram, linkedin, tiktok and x. covers content pillars, hooks, carousels, short-video scripts and repurposing. built for solo creators and small brands who want consistency without burnout. marketing &amp; content"><div class="meta"><span><span class="cat">Marketing &amp; Content</span></span><span>18 prompts · <span class="price">$19</span></span></div>
-<h3>The Content Calendar Kit</h3><p class="pitch">A month of posts planned in an afternoon.</p><p class="desc">18 prompts that turn one topic into a month of posts for Instagram, LinkedIn, TikTok and X.</p>
-<blockquote>“You are a social media strategist. My account is about [topic] for [audience]. Propose 4 content pillars, explain…”</blockquote><div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/sbhvv" data-slug="social-content-studio">Buy · $19</a><button class="prev" data-p="social-content-studio">Preview</button></div></article>
-<article id="copy-that-sells" class="card" data-cat="marketing" data-av="1" data-q="copy that converts headlines, ads and pages that sound like a person. 20 copywriting prompts for headlines, ads, landing pages and product pages, built on classic frameworks like pas and aida. includes prompts to research customer language and to critique your own drafts. for founders and freelancers who write their own marketing. marketing &amp; content"><div class="meta"><span><span class="cat">Marketing &amp; Content</span></span><span>20 prompts · <span class="price">$24</span></span></div>
-<h3>Copy That Converts</h3><p class="pitch">Headlines, ads and pages that sound like a person.</p><p class="desc">20 copywriting prompts for headlines, ads, landing pages and product pages, built on classic frameworks like PAS and AIDA.</p>
-<blockquote>“Here are reviews, forum posts or survey answers from [audience]: [paste]. Extract the exact phrases they use for…”</blockquote><div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/jpgbyb" data-slug="copy-that-sells">Buy · $24</a><button class="prev" data-p="copy-that-sells">Preview</button></div></article>
-<article id="inbox-revenue" class="card" data-cat="marketing" data-av="1" data-q="the newsletter playbook emails people actually open, from welcome to launch. 17 prompts to plan, write and improve email marketing: welcome sequences, weekly newsletters, launch campaigns and win-back emails. includes subject line testing and list-growth ideas. for creators and small businesses using any email platform. marketing &amp; content"><div class="meta"><span><span class="cat">Marketing &amp; Content</span></span><span>17 prompts · <span class="price">$24</span></span></div>
-<h3>The Newsletter Playbook</h3><p class="pitch">Emails people actually open, from welcome to launch.</p><p class="desc">17 prompts to plan, write and improve email marketing: welcome sequences, weekly newsletters, launch campaigns and win-back emails.</p>
-<blockquote>“Suggest 10 free lead magnets for [audience] interested in [topic] that lead naturally to buying [offer]. Rate each…”</blockquote><div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/xnopas" data-slug="inbox-revenue">Buy · $24</a><button class="prev" data-p="inbox-revenue">Preview</button></div></article>
-<article id="youtube-script-lab" class="card" data-cat="marketing" data-av="1" data-q="the youtube script room from idea to a script people watch to the end. 17 prompts for youtube creators: finding video ideas, titles and thumbnails, strong intros, full scripts, retention edits, shorts and descriptions. built around keeping viewers watching. for new and growing channels in any niche. marketing &amp; content"><div class="meta"><span><span class="cat">Marketing &amp; Content</span></span><span>17 prompts · <span class="price">$19</span></span></div>
-<h3>The YouTube Script Room</h3><p class="pitch">From idea to a script people watch to the end.</p><p class="desc">17 prompts for YouTube creators: finding video ideas, titles and thumbnails, strong intros, full scripts, retention edits, Shorts and descriptions.</p>
-<blockquote>“My channel is about [niche] for [audience]. Give 20 video ideas with strong viewer demand, labelled search-driven…”</blockquote><div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/wgyvex" data-slug="youtube-script-lab">Buy · $19</a><button class="prev" data-p="youtube-script-lab">Preview</button></div></article>
-<article id="short-video-studio" class="card is-soon" data-cat="marketing" data-av="0" data-q="the short video studio hooks, scripts and series ideas for reels, tiktok and shorts. 17 prompts for short vertical video: hooks, 30-second scripts, series formats, on-screen text, b-roll lists, captions, trend adaptation and performance reviews. for creators and small brands posting on tiktok, instagram reels and youtube shorts. marketing &amp; content"><div class="meta"><span><span class="cat">Marketing &amp; Content</span><span class="tag">Coming soon</span></span><span>17 prompts · <span class="price">$19</span></span></div>
-<h3>The Short Video Studio</h3><p class="pitch">Hooks, scripts and series ideas for Reels, TikTok and Shorts.</p><p class="desc">17 prompts for short vertical video: hooks, 30-second scripts, series formats, on-screen text, b-roll lists, captions, trend adaptation and performance reviews.</p>
-<blockquote>“Suggest 8 repeatable series formats for a [niche] account aimed at [audience] (e.g. &#x27;one tool a day&#x27;, &#x27;myth vs…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="short-video-studio" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="short-video-studio">Preview</button></div></article>
-<article id="podcast-producer" class="card is-soon" data-cat="marketing" data-av="0" data-q="the podcast producer plan, record and promote a show people finish listening to. 16 prompts for podcasters: show concept, episode planning, guest research and outreach, interview questions, show notes, titles, clips and promotion. for new and growing independent shows. marketing &amp; content"><div class="meta"><span><span class="cat">Marketing &amp; Content</span><span class="tag">Coming soon</span></span><span>16 prompts · <span class="price">$19</span></span></div>
-<h3>The Podcast Producer</h3><p class="pitch">Plan, record and promote a show people finish listening to.</p><p class="desc">16 prompts for podcasters: show concept, episode planning, guest research and outreach, interview questions, show notes, titles, clips and promotion.</p>
-<blockquote>“Help me define a podcast about [topic] for [audience]: a one-sentence promise, format, episode length, frequency…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="podcast-producer" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="podcast-producer">Preview</button></div></article>
-<article id="seo-blog-engine" class="card is-soon" data-cat="marketing" data-av="0" data-q="the seo blog engine articles that rank because they actually answer the question. 19 prompts for seo blogging: keyword clustering, search intent, briefs, outlines, original drafts, on-page optimisation, internal links, refreshing old posts and content calendars. for small business blogs, niche sites and freelance writers. marketing &amp; content"><div class="meta"><span><span class="cat">Marketing &amp; Content</span><span class="tag">Coming soon</span></span><span>19 prompts · <span class="price">$24</span></span></div>
-<h3>The SEO Blog Engine</h3><p class="pitch">Articles that rank because they actually answer the question.</p><p class="desc">19 prompts for SEO blogging: keyword clustering, search intent, briefs, outlines, original drafts, on-page optimisation, internal links, refreshing old posts and content calendars.</p>
-<blockquote>“Group these keywords [list] into topic clusters, name a pillar page for each, and note the search intent of each…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="seo-blog-engine" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="seo-blog-engine">Preview</button></div></article>
-<article id="customer-research-kit" class="card is-soon" data-cat="marketing" data-av="0" data-q="the customer research kit find out what customers really want before you build or market. 19 prompts for customer research: personas from real data, interview guides, surveys, analysing feedback, jobs-to-be-done, messaging tests and turning insights into copy. for founders, marketers and product people. marketing &amp; content"><div class="meta"><span><span class="cat">Marketing &amp; Content</span><span class="tag">Coming soon</span></span><span>19 prompts · <span class="price">$19</span></span></div>
-<h3>The Customer Research Kit</h3><p class="pitch">Find out what customers really want before you build or market.</p><p class="desc">19 prompts for customer research: personas from real data, interview guides, surveys, analysing feedback, jobs-to-be-done, messaging tests and turning insights into copy.</p>
-<blockquote>“Help me plan a 2-week customer research sprint for [product] to answer [questions]: methods, who to talk to,…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="customer-research-kit" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="customer-research-kit">Preview</button></div></article>
-<article id="brand-identity-kit" class="card is-soon" data-cat="marketing" data-av="0" data-q="the brand identity kit name it, position it and give it a voice people recognise. 19 prompts for building a small brand: positioning, naming, taglines, brand story, voice and tone guide, visual direction briefs, messaging hierarchy and brand consistency checks. for new businesses, rebrands and side projects. marketing &amp; content"><div class="meta"><span><span class="cat">Marketing &amp; Content</span><span class="tag">Coming soon</span></span><span>19 prompts · <span class="price">$19</span></span></div>
-<h3>The Brand Identity Kit</h3><p class="pitch">Name it, position it and give it a voice people recognise.</p><p class="desc">19 prompts for building a small brand: positioning, naming, taglines, brand story, voice and tone guide, visual direction briefs, messaging hierarchy and brand consistency checks.</p>
-<blockquote>“Ask me 10 questions about my business [business], then write brand foundations: purpose, audience, promise,…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="brand-identity-kit" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="brand-identity-kit">Preview</button></div></article>
-</div></section>
-<section><div class="head"><h2>Related guides</h2></div><div class="glist"><a href="../guides/content-calendar-with-ai.html"><span class="kicker">Guide</span><h3>How to plan a month of social media posts with AI</h3><p>A step-by-step way to use ChatGPT or Claude to choose content pillars, build a 30-day calendar and write posts that still sound like you.</p></a><a href="../guides/welcome-email-sequence.html"><span class="kicker">Guide</span><h3>How to write a welcome email sequence (with prompts)</h3><p>What to put in the first five emails a new subscriber receives, and prompts to draft each one with an AI assistant.</p></a><a href="../guides/product-descriptions-that-sell.html"><span class="kicker">Guide</span><h3>How to write product descriptions that sell, with AI prompts</h3><p>A simple structure for product descriptions that lead with the outcome, plus prompts for writing, reviewing and improving your listings.</p></a><a href="../guides/find-product-gaps-in-reviews.html"><span class="kicker">Guide</span><h3>How to find a product idea in customer reviews</h3><p>A three-step method for mining best-seller reviews, spotting complaints that repeat across products, and turning one gap into a small digital product.</p></a><a href="../guides/real-estate-listing-descriptions.html"><span class="kicker">Guide</span><h3>How to write property listing descriptions with AI (that stay accurate)</h3><p>A simple process for agents to turn property facts into a listing description, headlines and a photo shot list, while staying factual.</p></a><a href="../guides/midjourney-prompt-formula.html"><span class="kicker">Guide</span><h3>A simple prompt formula for Midjourney and DALL-E images</h3><p>Use a chat assistant to turn a rough idea into detailed image prompts: subject, setting, light, lens, style and mood.</p></a><a href="../guides/short-video-hooks.html"><span class="kicker">Guide</span><h3>How to write hooks for TikTok and Reels with AI</h3><p>Prompts for writing scroll-stopping hooks, 30-second scripts and a repeatable series format.</p></a><a href="../guides/seo-blog-post-with-ai.html"><span class="kicker">Guide</span><h3>How to write an SEO blog post with AI that&#x27;s actually worth ranking</h3><p>A brief-first workflow: analyse search intent, outline better than the competition, and add your own experience.</p></a></div></section><section><div class="head"><h2>Other categories</h2></div><div class="catlinks"><a href="sales.html">Sales &amp; Clients</a><a href="business.html">Business &amp; Operations</a><a href="ecommerce.html">E-commerce</a><a href="career.html">Career &amp; Learning</a><a href="creative.html">Writing &amp; Creative</a><a href="tech.html">Tech &amp; Data</a><a href="pros.html">For Professionals</a><a href="life.html">Home &amp; Life</a></div></section>
-<footer><span>© 2026 Carlsson &amp; Co.</span><span><a href="../#library">Library</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></span><span>Payments handled securely by Gumroad.</span></footer>
-</div></body></html>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap bar-inner"><a class="logo" href="../">Carlsson &amp; Co.</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary"><a href="../#library">Library</a><a href="../c/" aria-current="page">Categories</a><a href="../#sets">Sets</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></nav></div></header>
+<main id="main">
+<div class="wrap">
+<header class="page-hero"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="./">Categories</a></li><li aria-current="page">Marketing &amp; Content</li></ol></nav>
+<p class="kicker">Category</p><h1>Marketing &amp; Content</h1><p>Prompt packs for social media, short video, podcasts, SEO blogging, email, copywriting and branding. Each is a short PDF with 15 to 20 prompts. Works with ChatGPT, Claude and Gemini.</p></header>
+<section class="tight"><div class="grid"><article class="card" id="social-content-studio" data-cat="marketing" data-av="1" data-q="the content calendar kit a month of posts planned in an afternoon. 18 prompts that turn one topic into a month of posts for instagram, linkedin, tiktok and x. covers content pillars, hooks, carousels, short-video scripts and repurposing. built for solo creators and small brands who want consistency without burnout. marketing &amp; content content pillars plan 30-day calendar plan voice profile plan audience questions plan hook bank write carousel write short video script write linkedin story post write caption polish write call to action write one idea, five formats repurpose &amp; improve comment replies repurpose &amp; improve performance review repurpose &amp; improve bio rewrite repurpose &amp; improve content series repurpose &amp; improve trend filter repurpose &amp; improve batch day plan repurpose &amp; improve stuck-day rescue repurpose &amp; improve">
+<div class="meta"><span><a class="cat" href="../c/marketing.html">Marketing &amp; Content</a></span><span>18 prompts · <span class="price">$19</span></span></div>
+<h3><a href="../p/social-content-studio/">The Content Calendar Kit</a></h3>
+<p class="pitch">A month of posts planned in an afternoon.</p>
+<p class="desc">18 prompts that turn one topic into a month of posts for Instagram, LinkedIn, TikTok and X.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>You are a social media strategist. My account is about [topic] for [audience]. Propose 4 content pillars, explain…</blockquote>
+<div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/sbhvv" data-buy="social-content-studio">Buy · $19</a><button type="button" class="prev" data-p="social-content-studio" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card" id="copy-that-sells" data-cat="marketing" data-av="1" data-q="copy that converts headlines, ads and pages that sound like a person. 20 copywriting prompts for headlines, ads, landing pages and product pages, built on classic frameworks like pas and aida. includes prompts to research customer language and to critique your own drafts. for founders and freelancers who write their own marketing. marketing &amp; content customer language research offer clarity research objection list research awareness level research headline set write pas ad write aida landing page write product description write facebook/instagram ads write google search ads write email announcement write guarantee and risk reversal write about page write cut the fluff edit clarity critique edit specificity pass edit tone variations edit a/b test ideas edit read-aloud test edit call to action buttons edit">
+<div class="meta"><span><a class="cat" href="../c/marketing.html">Marketing &amp; Content</a></span><span>20 prompts · <span class="price">$24</span></span></div>
+<h3><a href="../p/copy-that-sells/">Copy That Converts</a></h3>
+<p class="pitch">Headlines, ads and pages that sound like a person.</p>
+<p class="desc">20 copywriting prompts for headlines, ads, landing pages and product pages, built on classic frameworks like PAS and AIDA.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Here are reviews, forum posts or survey answers from [audience]: [paste]. Extract the exact phrases they use for…</blockquote>
+<div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/jpgbyb" data-buy="copy-that-sells">Buy · $24</a><button type="button" class="prev" data-p="copy-that-sells" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card" id="inbox-revenue" data-cat="marketing" data-av="1" data-q="the newsletter playbook emails people actually open, from welcome to launch. 17 prompts to plan, write and improve email marketing: welcome sequences, weekly newsletters, launch campaigns and win-back emails. includes subject line testing and list-growth ideas. for creators and small businesses using any email platform. marketing &amp; content lead magnet ideas grow the list signup copy grow the list pop-up and footer variants grow the list welcome sequence sequences launch sequence sequences abandoned cart sequences win-back sequences post-purchase sequences issue planner weekly newsletter draft an issue weekly newsletter story to lesson weekly newsletter soft sell paragraph weekly newsletter subject line lab optimise metrics review optimise deliverability check optimise segment ideas optimise re-read for one reader optimise">
+<div class="meta"><span><a class="cat" href="../c/marketing.html">Marketing &amp; Content</a></span><span>17 prompts · <span class="price">$24</span></span></div>
+<h3><a href="../p/inbox-revenue/">The Newsletter Playbook</a></h3>
+<p class="pitch">Emails people actually open, from welcome to launch.</p>
+<p class="desc">17 prompts to plan, write and improve email marketing: welcome sequences, weekly newsletters, launch campaigns and win-back emails.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Suggest 10 free lead magnets for [audience] interested in [topic] that lead naturally to buying [offer]. Rate each…</blockquote>
+<div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/xnopas" data-buy="inbox-revenue">Buy · $24</a><button type="button" class="prev" data-p="inbox-revenue" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card" id="youtube-script-lab" data-cat="marketing" data-av="1" data-q="the youtube script room from idea to a script people watch to the end. 17 prompts for youtube creators: finding video ideas, titles and thumbnails, strong intros, full scripts, retention edits, shorts and descriptions. built around keeping viewers watching. for new and growing channels in any niche. marketing &amp; content video idea generator ideas &amp; packaging title options ideas &amp; packaging thumbnail concepts ideas &amp; packaging competitor gap ideas &amp; packaging intro hook script outline script full script script storytelling version script retention edit script call to subscribe script description &amp; chapters publish &amp; repurpose tags &amp; keywords publish &amp; repurpose shorts from long video publish &amp; repurpose community post publish &amp; repurpose pinned comment publish &amp; repurpose analytics review publish &amp; repurpose series planner publish &amp; repurpose">
+<div class="meta"><span><a class="cat" href="../c/marketing.html">Marketing &amp; Content</a></span><span>17 prompts · <span class="price">$19</span></span></div>
+<h3><a href="../p/youtube-script-lab/">The YouTube Script Room</a></h3>
+<p class="pitch">From idea to a script people watch to the end.</p>
+<p class="desc">17 prompts for YouTube creators: finding video ideas, titles and thumbnails, strong intros, full scripts, retention edits, Shorts and descriptions.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>My channel is about [niche] for [audience]. Give 20 video ideas with strong viewer demand, labelled search-driven…</blockquote>
+<div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/wgyvex" data-buy="youtube-script-lab">Buy · $19</a><button type="button" class="prev" data-p="youtube-script-lab" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="short-video-studio" data-cat="marketing" data-av="0" data-q="the short video studio hooks, scripts and series ideas for reels, tiktok and shorts. 17 prompts for short vertical video: hooks, 30-second scripts, series formats, on-screen text, b-roll lists, captions, trend adaptation and performance reviews. for creators and small brands posting on tiktok, instagram reels and youtube shorts. marketing &amp; content series formats ideas 30 video ideas ideas comment-to-video ideas hook bank script 30-second script script talking-head to voiceover script tutorial in 45 seconds script story video script shot list produce on-screen text produce caption and hashtags produce trend adaptation produce retention review improve monthly review improve repurpose long to short improve collab pitch improve content batch week improve">
+<div class="meta"><span><a class="cat" href="../c/marketing.html">Marketing &amp; Content</a><span class="tag">Coming soon</span></span><span>17 prompts · <span class="price">$19</span></span></div>
+<h3><a href="../p/short-video-studio/">The Short Video Studio</a></h3>
+<p class="pitch">Hooks, scripts and series ideas for Reels, TikTok and Shorts.</p>
+<p class="desc">17 prompts for short vertical video: hooks, 30-second scripts, series formats, on-screen text, b-roll lists, captions, trend adaptation and performance reviews.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Suggest 8 repeatable series formats for a [niche] account aimed at [audience] (e.g. 'one tool a day', 'myth vs…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="short-video-studio">Coming soon</span><button type="button" class="prev" data-p="short-video-studio" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="podcast-producer" data-cat="marketing" data-av="0" data-q="the podcast producer plan, record and promote a show people finish listening to. 16 prompts for podcasters: show concept, episode planning, guest research and outreach, interview questions, show notes, titles, clips and promotion. for new and growing independent shows. marketing &amp; content show concept concept name ideas concept episode bank concept season arc concept solo episode outline episodes guest research brief episodes interview questions episodes guest outreach email episodes intro and outro script episodes show notes publish episode titles publish clip finder publish promotion plan grow newsletter for listeners grow listener survey grow sponsor one-pager grow">
+<div class="meta"><span><a class="cat" href="../c/marketing.html">Marketing &amp; Content</a><span class="tag">Coming soon</span></span><span>16 prompts · <span class="price">$19</span></span></div>
+<h3><a href="../p/podcast-producer/">The Podcast Producer</a></h3>
+<p class="pitch">Plan, record and promote a show people finish listening to.</p>
+<p class="desc">16 prompts for podcasters: show concept, episode planning, guest research and outreach, interview questions, show notes, titles, clips and promotion.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Help me define a podcast about [topic] for [audience]: a one-sentence promise, format, episode length, frequency…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="podcast-producer">Coming soon</span><button type="button" class="prev" data-p="podcast-producer" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="seo-blog-engine" data-cat="marketing" data-av="0" data-q="the seo blog engine articles that rank because they actually answer the question. 19 prompts for seo blogging: keyword clustering, search intent, briefs, outlines, original drafts, on-page optimisation, internal links, refreshing old posts and content calendars. for small business blogs, niche sites and freelance writers. marketing &amp; content keyword clusters plan search intent analysis plan topic ideas from questions plan content calendar plan content brief brief &amp; draft outline brief &amp; draft intro that earns the scroll brief &amp; draft draft a section brief &amp; draft experience injection brief &amp; draft faq section brief &amp; draft title and meta optimise on-page check optimise internal linking optimise schema suggestion optimise image alt text optimise content refresh refresh &amp; grow cannibalisation check refresh &amp; grow repurpose to social refresh &amp; grow guest post pitch refresh &amp; grow">
+<div class="meta"><span><a class="cat" href="../c/marketing.html">Marketing &amp; Content</a><span class="tag">Coming soon</span></span><span>19 prompts · <span class="price">$24</span></span></div>
+<h3><a href="../p/seo-blog-engine/">The SEO Blog Engine</a></h3>
+<p class="pitch">Articles that rank because they actually answer the question.</p>
+<p class="desc">19 prompts for SEO blogging: keyword clustering, search intent, briefs, outlines, original drafts, on-page optimisation, internal links, refreshing old posts and content calendars.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Group these keywords [list] into topic clusters, name a pillar page for each, and note the search intent of each…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="seo-blog-engine">Coming soon</span><button type="button" class="prev" data-p="seo-blog-engine" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="customer-research-kit" data-cat="marketing" data-av="0" data-q="the customer research kit find out what customers really want before you build or market. 19 prompts for customer research: personas from real data, interview guides, surveys, analysing feedback, jobs-to-be-done, messaging tests and turning insights into copy. for founders, marketers and product people. marketing &amp; content research plan plan recruit message plan interview guide interviews jobs to be done interviews interview synthesis interviews survey builder surveys survey analysis surveys post-purchase survey surveys churn survey surveys persona from data make sense voice-of-customer bank make sense review mining make sense customer journey map make sense messaging from research use it objection faq use it message test use it insight report use it feature prioritisation use it research repository use it">
+<div class="meta"><span><a class="cat" href="../c/marketing.html">Marketing &amp; Content</a><span class="tag">Coming soon</span></span><span>19 prompts · <span class="price">$19</span></span></div>
+<h3><a href="../p/customer-research-kit/">The Customer Research Kit</a></h3>
+<p class="pitch">Find out what customers really want before you build or market.</p>
+<p class="desc">19 prompts for customer research: personas from real data, interview guides, surveys, analysing feedback, jobs-to-be-done, messaging tests and turning insights into copy.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Help me plan a 2-week customer research sprint for [product] to answer [questions]: methods, who to talk to,…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="customer-research-kit">Coming soon</span><button type="button" class="prev" data-p="customer-research-kit" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="brand-identity-kit" data-cat="marketing" data-av="0" data-q="the brand identity kit name it, position it and give it a voice people recognise. 19 prompts for building a small brand: positioning, naming, taglines, brand story, voice and tone guide, visual direction briefs, messaging hierarchy and brand consistency checks. for new businesses, rebrands and side projects. marketing &amp; content brand foundations strategy positioning statement strategy competitor map strategy naming name &amp; say it name shortlist test name &amp; say it taglines name &amp; say it brand story name &amp; say it elevator pitch name &amp; say it voice and tone guide voice rewrite in brand voice voice messaging hierarchy voice visual direction brief look colour palette ideas look font pairing look logo brief look brand checklist keep it consistent consistency audit keep it consistent launch announcement keep it consistent brand one-pager keep it consistent">
+<div class="meta"><span><a class="cat" href="../c/marketing.html">Marketing &amp; Content</a><span class="tag">Coming soon</span></span><span>19 prompts · <span class="price">$19</span></span></div>
+<h3><a href="../p/brand-identity-kit/">The Brand Identity Kit</a></h3>
+<p class="pitch">Name it, position it and give it a voice people recognise.</p>
+<p class="desc">19 prompts for building a small brand: positioning, naming, taglines, brand story, voice and tone guide, visual direction briefs, messaging hierarchy and brand consistency checks.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Ask me 10 questions about my business [business], then write brand foundations: purpose, audience, promise,…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="brand-identity-kit">Coming soon</span><button type="button" class="prev" data-p="brand-identity-kit" aria-haspopup="dialog">Preview</button></div>
+</article></div></section>
+<section><div class="head"><h2>Related guides</h2></div><div class="glist"><a href="../guides/content-calendar-with-ai.html"><span class="kicker">Guide</span><h3>How to plan a month of social media posts with AI</h3><p>A step-by-step way to use ChatGPT or Claude to choose content pillars, build a 30-day calendar and write posts that still sound like you.</p></a><a href="../guides/welcome-email-sequence.html"><span class="kicker">Guide</span><h3>How to write a welcome email sequence (with prompts)</h3><p>What to put in the first five emails a new subscriber receives, and prompts to draft each one with an AI assistant.</p></a><a href="../guides/product-descriptions-that-sell.html"><span class="kicker">Guide</span><h3>How to write product descriptions that sell, with AI prompts</h3><p>A simple structure for product descriptions that lead with the outcome, plus prompts for writing, reviewing and improving your listings.</p></a><a href="../guides/find-product-gaps-in-reviews.html"><span class="kicker">Guide</span><h3>How to find a product idea in customer reviews</h3><p>A three-step method for mining best-seller reviews, spotting complaints that repeat across products, and turning one gap into a small digital product.</p></a><a href="../guides/real-estate-listing-descriptions.html"><span class="kicker">Guide</span><h3>How to write property listing descriptions with AI (that stay accurate)</h3><p>A simple process for agents to turn property facts into a listing description, headlines and a photo shot list, while staying factual.</p></a><a href="../guides/midjourney-prompt-formula.html"><span class="kicker">Guide</span><h3>A simple prompt formula for Midjourney and DALL-E images</h3><p>Use a chat assistant to turn a rough idea into detailed image prompts: subject, setting, light, lens, style and mood.</p></a><a href="../guides/short-video-hooks.html"><span class="kicker">Guide</span><h3>How to write hooks for TikTok and Reels with AI</h3><p>Prompts for writing scroll-stopping hooks, 30-second scripts and a repeatable series format.</p></a><a href="../guides/seo-blog-post-with-ai.html"><span class="kicker">Guide</span><h3>How to write an SEO blog post with AI that's actually worth ranking</h3><p>A brief-first workflow: analyse search intent, outline better than the competition, and add your own experience.</p></a></div></section>
+<section><div class="head"><h2>Other categories</h2></div><div class="catlinks"><a href="sales.html">Sales &amp; Clients</a><a href="business.html">Business &amp; Operations</a><a href="ecommerce.html">E-commerce</a><a href="career.html">Career &amp; Learning</a><a href="creative.html">Writing &amp; Creative</a><a href="tech.html">Tech &amp; Data</a><a href="pros.html">For Professionals</a><a href="life.html">Home &amp; Life</a></div></section>
+</div>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Carlsson &amp; Co.</span><nav aria-label="Footer"><a href="../#library">Library</a><a href="../c/">Categories</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></nav><span>Payments handled securely by Gumroad.</span></div></footer>
+<dialog id="pv" aria-labelledby="pv-title">
+<div class="mod">
+<div class="mod-bar"><p class="kicker">Preview</p><button type="button" class="x" aria-label="Close preview">Close</button></div>
+<h2 id="pv-title"></h2>
+<p class="pitch" id="pv-pitch"></p>
+<ol id="pv-list"></ol>
+<div class="mod-foot"><p id="pv-meta"></p><div class="mod-actions">
+<a class="btn solid" id="pv-buy" hidden>Buy</a>
+<span class="btn soon" id="pv-soon" hidden>Coming soon</span>
+<a class="btn" id="pv-more" href="../">View the pack</a>
+</div></div>
+</div></dialog><script type="application/json" id="preview-data">{"social-content-studio": {"t": "The Content Calendar Kit", "p": 19, "n": 18, "u": "https://mcarlsso.gumroad.com/l/sbhvv", "q": [["Content pillars", "You are a social media strategist. My account is about [topic] for [audience]. Propose 4 content pillars, explain why each matters to this audience, and give 5 post ideas per pillar."], ["30-day calendar", "Build a 30-day posting calendar for [platform] using these pillars: [pillars]. Posting [x] times per week. Return a table: date, pillar, format (carousel/reel/text), working title, goal (reach, trust, sale)."], ["Voice profile", "Here are 5 of my posts I'm happy with: [paste]. Describe my voice in 6 bullet points (sentence length, words I use, words I avoid, humour, stance) so you can write like me."]]}, "copy-that-sells": {"t": "Copy That Converts", "p": 24, "n": 20, "u": "https://mcarlsso.gumroad.com/l/jpgbyb", "q": [["Customer language", "Here are reviews, forum posts or survey answers from [audience]: [paste]. Extract the exact phrases they use for their problem, their desired outcome and their objections."], ["Offer clarity", "Explain my offer [offer] in one sentence a 12-year-old would understand. Then list the 3 strongest benefits and the proof I have for each: [proof]."], ["Objection list", "List the 10 most likely reasons [audience] would not buy [offer] at [price]. For each, suggest one line of copy that addresses it honestly."]]}, "inbox-revenue": {"t": "The Newsletter Playbook", "p": 24, "n": 17, "u": "https://mcarlsso.gumroad.com/l/xnopas", "q": [["Lead magnet ideas", "Suggest 10 free lead magnets for [audience] interested in [topic] that lead naturally to buying [offer]. Rate each on effort and appeal."], ["Signup copy", "Write a newsletter signup block: headline, 2-line description, button text and a small privacy line. Topic: [topic]. Audience: [audience]."], ["Pop-up and footer variants", "Write 3 short versions of my signup pitch for a pop-up, a blog footer and a social bio link."]]}, "youtube-script-lab": {"t": "The YouTube Script Room", "p": 19, "n": 17, "u": "https://mcarlsso.gumroad.com/l/wgyvex", "q": [["Video idea generator", "My channel is about [niche] for [audience]. Give 20 video ideas with strong viewer demand, labelled search-driven or browse-driven."], ["Title options", "Write 12 titles for a video about [topic]. Under 60 characters. Mix curiosity, outcome and specificity. Avoid clickbait I can't deliver on."], ["Thumbnail concepts", "Suggest 5 thumbnail concepts for the title [title]: main image, facial expression, 2-4 words of text, colour contrast."]]}, "short-video-studio": {"t": "The Short Video Studio", "p": 19, "n": 17, "u": "", "q": [["Series formats", "Suggest 8 repeatable series formats for a [niche] account aimed at [audience] (e.g. 'one tool a day', 'myth vs fact'), each with 3 episode ideas."], ["30 video ideas", "Give me 30 short video ideas about [topic] that [audience] would save or share, labelled by type: teach, story, opinion, behind-the-scenes."], ["Comment-to-video", "Turn these comments and questions from my audience [paste] into 10 video ideas with hooks."]]}, "podcast-producer": {"t": "The Podcast Producer", "p": 19, "n": 16, "u": "", "q": [["Show concept", "Help me define a podcast about [topic] for [audience]: a one-sentence promise, format, episode length, frequency and 3 shows it should feel different from."], ["Name ideas", "Suggest 15 podcast names for [concept] that are short, searchable and easy to say out loud."], ["Episode bank", "Generate 25 episode ideas for [show], grouped into solo, interview and listener-question episodes."]]}, "seo-blog-engine": {"t": "The SEO Blog Engine", "p": 24, "n": 19, "u": "", "q": [["Keyword clusters", "Group these keywords [list] into topic clusters, name a pillar page for each, and note the search intent of each keyword."], ["Search intent analysis", "For the query '[keyword]', describe what the searcher wants, which content format suits it, and what a page must include to satisfy them."], ["Topic ideas from questions", "List 30 questions [audience] asks about [topic], grouped into clusters, marking quick wins."]]}, "customer-research-kit": {"t": "The Customer Research Kit", "p": 19, "n": 19, "u": "", "q": [["Research plan", "Help me plan a 2-week customer research sprint for [product] to answer [questions]: methods, who to talk to, sample size."], ["Recruit message", "Write a short message inviting [customer type] to a 20-minute research call, with an incentive [incentive]."], ["Interview guide", "Write a 30-minute customer interview guide about [topic] focused on past behaviour, not hypotheticals."]]}, "brand-identity-kit": {"t": "The Brand Identity Kit", "p": 19, "n": 19, "u": "", "q": [["Brand foundations", "Ask me 10 questions about my business [business], then write brand foundations: purpose, audience, promise, personality, proof points."], ["Positioning statement", "Write a positioning statement for [brand]: for [audience] who [need], [brand] is the [category] that [difference] because [reason]."], ["Competitor map", "Map these competitors [list] on two axes that matter to customers, and show where [brand] can stand apart."]]}}</script>
+<script>
+(function () {
+  var bar = document.querySelector(".bar");
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("site-nav");
+
+  if (toggle && bar && nav) {
+    function setOpen(open) {
+      bar.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.textContent = open ? "Close" : "Menu";
+    }
+    toggle.addEventListener("click", function () {
+      setOpen(!bar.classList.contains("is-open"));
+    });
+    nav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Escape" || !bar.classList.contains("is-open")) return;
+      if (document.querySelector("dialog[open]")) return;
+      setOpen(false);
+      toggle.focus();
+    });
+  }
+
+  var lib = document.getElementById("lib");
+  if (lib) {
+    var cat = "all";
+    var onlyAvail = false;
+    var touched = false;
+    var query = document.getElementById("q");
+    var buttons = Array.prototype.slice.call(document.querySelectorAll(".filters [data-c]"));
+    var avail = document.querySelector(".filters [data-av]");
+    var allcard = document.getElementById("allcard");
+    var none = document.getElementById("none");
+    var status = document.getElementById("status");
+
+    function run() {
+      var words = query.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      var shown = 0;
+      lib.querySelectorAll(".card[data-cat]").forEach(function (card) {
+        var text = card.getAttribute("data-q") || "";
+        var ok = (cat === "all" || card.getAttribute("data-cat") === cat)
+          && (!onlyAvail || card.getAttribute("data-av") === "1")
+          && words.every(function (word) { return text.indexOf(word) !== -1; });
+        card.hidden = !ok;
+        if (ok) shown += 1;
+      });
+      if (allcard) allcard.hidden = !(cat === "all" && words.length === 0 && !onlyAvail);
+      if (none) none.hidden = shown !== 0;
+      if (status && touched) {
+        status.textContent = shown === 0
+          ? "No packs match."
+          : shown + (shown === 1 ? " pack shown." : " packs shown.");
+      }
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        touched = true;
+        cat = button.getAttribute("data-c");
+        buttons.forEach(function (other) {
+          var on = other === button;
+          other.classList.toggle("on", on);
+          other.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, "", cat === "all" ? window.location.pathname + window.location.search : "#cat=" + cat);
+        }
+        run();
+      });
+    });
+    if (query) query.addEventListener("input", function () { touched = true; run(); });
+    if (avail) {
+      avail.addEventListener("click", function () {
+        touched = true;
+        onlyAvail = !onlyAvail;
+        avail.classList.toggle("on", onlyAvail);
+        avail.setAttribute("aria-pressed", onlyAvail ? "true" : "false");
+        run();
+      });
+    }
+    var hash = window.location.hash.match(/^#cat=([a-z0-9-]+)$/);
+    if (hash) {
+      var initial = buttons.filter(function (button) {
+        return button.getAttribute("data-c") === hash[1];
+      })[0];
+      if (initial) initial.click();
+    }
+  }
+
+  var dialog = document.getElementById("pv");
+  var dataEl = document.getElementById("preview-data");
+  if (!dialog || !dataEl) return;
+
+  var previews = JSON.parse(dataEl.textContent);
+  var opener = null;
+  var title = document.getElementById("pv-title");
+  var pitch = document.getElementById("pv-pitch");
+  var list = document.getElementById("pv-list");
+  var meta = document.getElementById("pv-meta");
+  var buy = document.getElementById("pv-buy");
+  var soon = document.getElementById("pv-soon");
+  var more = document.getElementById("pv-more");
+  var root = document.body.getAttribute("data-root") || "./";
+
+  function openPreview(slug, trigger) {
+    var item = previews[slug];
+    if (!item) return;
+    title.textContent = item.t;
+    pitch.textContent = item.q.length + " of the " + item.n + " prompts in this pack";
+    list.replaceChildren();
+    item.q.forEach(function (row) {
+      var li = document.createElement("li");
+      var name = document.createElement("b");
+      var text = document.createElement("p");
+      name.textContent = row[0];
+      text.textContent = row[1];
+      li.append(name, text);
+      list.append(li);
+    });
+    meta.textContent = item.n + " prompts in the PDF.";
+    more.href = root + "p/" + slug + "/";
+    if (item.u) {
+      buy.href = item.u;
+      buy.textContent = "Buy · $" + item.p;
+      buy.setAttribute("data-buy", slug);
+      buy.hidden = false;
+      soon.hidden = true;
+    } else {
+      buy.hidden = true;
+      buy.removeAttribute("href");
+      soon.hidden = false;
+    }
+    opener = trigger || null;
+    dialog.showModal();
+    var closeButton = dialog.querySelector(".x");
+    if (closeButton) closeButton.focus();
+  }
+
+  document.addEventListener("click", function (event) {
+    var button = event.target.closest(".prev");
+    if (!button) return;
+    openPreview(button.getAttribute("data-p"), button);
+  });
+  dialog.querySelector(".x").addEventListener("click", function () { dialog.close(); });
+  dialog.addEventListener("click", function (event) {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener("close", function () {
+    if (opener) opener.focus();
+  });
+})();
+
+</script>
+</body>
+</html>

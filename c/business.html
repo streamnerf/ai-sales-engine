@@ -1,86 +1,271 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI prompts for business &amp; operations | Carlsson &amp; Co.</title><meta name="description" content="Prompt packs for launching products, finding market gaps, hiring, support, meetings, pitch decks and back-office work. Works with ChatGPT, Claude and Gemini."><link rel="canonical" href="https://streamnerf.github.io/ai-sales-engine/c/business.html">
-<meta property="og:type" content="website"><meta property="og:site_name" content="Carlsson &amp; Co."><meta property="og:title" content="AI prompts for business &amp; operations | Carlsson &amp; Co."><meta property="og:description" content="Prompt packs for launching products, finding market gaps, hiring, support, meetings, pitch decks and back-office work. Works with ChatGPT, Claude and Gemini."><meta property="og:url" content="https://streamnerf.github.io/ai-sales-engine/c/business.html">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="AI prompts for business &amp; operations | Carlsson &amp; Co."><meta name="twitter:description" content="Prompt packs for launching products, finding market gaps, hiring, support, meetings, pitch decks and back-office work. Works with ChatGPT, Claude and Gemini.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f7f3ec;--paper:#fffdf9;--ink:#1d1b18;--mute:#6b645a;--line:#e3dbcd;--acc:#a0522d}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
-h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;letter-spacing:-.01em;margin:0}
-nav{display:flex;justify-content:space-between;align-items:center;padding:26px 0;border-bottom:1px solid var(--line)}
-.logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;text-decoration:none}nav .links a{margin-left:28px;font-size:14px;text-decoration:none;color:var(--mute)}nav .links a:hover{color:var(--ink)}
-.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--acc)}
-.hero{padding:110px 0 90px;display:grid;grid-template-columns:1.4fr 1fr;gap:60px;align-items:end}
-.hero h1{font-size:clamp(46px,6vw,78px);line-height:1.02;margin:18px 0 0}.hero h1 em{color:var(--acc)}
-.hero p{color:var(--mute);font-size:18px;margin:0 0 24px}
-.btn{display:inline-block;padding:14px 26px;border:1px solid var(--ink);text-decoration:none;font-size:14px;letter-spacing:.04em;transition:.2s}.btn:hover{background:var(--ink);color:var(--bg)}
-.btn.solid{background:var(--ink);color:var(--bg)}.btn.solid:hover{background:var(--acc);border-color:var(--acc)}
-section{padding:80px 0;border-top:1px solid var(--line)}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:44px;gap:30px}.head h2{font-size:46px}.head p{color:var(--mute);max-width:420px;margin:0}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
-.card{background:var(--paper);padding:34px 30px 30px;display:flex;flex-direction:column;transition:background .25s}.card:hover{background:#fff}
-.meta{display:flex;justify-content:space-between;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}.price{color:var(--ink)}
-.card h3{font-size:30px;line-height:1.1;margin:22px 0 8px}.pitch{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;margin:0 0 12px;color:var(--acc)}
-.desc{font-size:14.5px;color:var(--mute);margin:0 0 20px}
-blockquote{margin:0 0 26px;padding:14px 0 0;border-top:1px dashed var(--line);font-size:13.5px;color:#4a453d;font-family:ui-monospace,Menlo,monospace;line-height:1.55;flex:1}
-.buy{align-self:flex-start;font-size:14px;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:2px;transition:.2s}.buy:hover{color:var(--acc);border-color:var(--acc)}
-.bundle{background:var(--ink);color:var(--bg);padding:70px 60px;display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center}
-.bundle h2{font-size:52px;line-height:1.05;margin:14px 0}.bundle p{color:#cfc7b8}.bundle .kicker{color:#d9a37f}
-.bprice{font-family:'Cormorant Garamond',serif;font-size:72px;line-height:1}.bprice s{font-size:30px;color:#8e877b;margin-left:12px}
-.bundle .btn{border-color:var(--bg);color:var(--bg);margin-top:24px}.bundle .btn:hover{background:var(--bg);color:var(--ink)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.steps div{border-top:1px solid var(--ink);padding-top:18px}.steps b{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;display:block;margin-bottom:6px}.steps p{color:var(--mute);margin:0}
-.faq{display:grid;grid-template-columns:1fr 2fr;gap:60px}details{border-bottom:1px solid var(--line);padding:20px 0}summary{cursor:pointer;font-family:'Cormorant Garamond',serif;font-size:23px;list-style:none;display:flex;justify-content:space-between}summary::after{content:'+';color:var(--acc)}details[open] summary::after{content:'–'}details p{color:var(--mute);margin:10px 0 0;max-width:620px}
-footer{border-top:1px solid var(--line);padding:40px 0 60px;display:flex;justify-content:space-between;font-size:13px;color:var(--mute)}
-@media(max-width:820px){.hero,.bundle,.faq{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.bundle{padding:44px 28px}.head{display:block}.head p{margin-top:12px}.hero{padding:70px 0 60px}}
-
-.actions{display:flex;gap:22px;align-items:center}.prev{background:none;border:0;padding:0 0 2px;font:inherit;font-size:14px;color:var(--mute);cursor:pointer;border-bottom:1px solid var(--line)}.prev:hover{color:var(--acc);border-color:var(--acc)}
-dialog{border:0;padding:0;max-width:640px;width:calc(100% - 40px);background:var(--paper);color:var(--ink);box-shadow:0 30px 80px rgba(29,27,24,.25)}dialog::backdrop{background:rgba(29,27,24,.45)}
-.mod{padding:44px 44px 36px}.mod h3{font-size:34px;margin:10px 0 6px}.mod ol{padding:0;margin:24px 0;list-style:none;counter-reset:p}.mod li{border-top:1px solid var(--line);padding:16px 0;counter-increment:p}.mod li b{display:block;font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:500;margin-bottom:4px}.mod li b::before{content:counter(p,decimal-leading-zero)'  ';color:var(--acc)}.mod li p{margin:0;font:13.5px/1.6 ui-monospace,Menlo,monospace;color:#4a453d}
-.mod .x{position:absolute;top:14px;right:18px;background:none;border:0;font-size:28px;cursor:pointer;color:var(--mute)}.mod .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:13px;color:var(--mute)}
-.sets{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}.set{border:1px solid var(--ink);padding:36px 32px;background:var(--paper);display:flex;flex-direction:column}.set h3{font-size:34px;margin:16px 0 8px}.set ul{list-style:none;padding:0;margin:8px 0 24px;flex:1}.set li{border-bottom:1px solid var(--line);padding:8px 0;font-size:14.5px;display:flex;justify-content:space-between}.set li span{color:var(--mute)}.set .bp{font-family:'Cormorant Garamond',serif;font-size:46px;line-height:1;margin-bottom:18px}.set .bp s{font-size:22px;color:var(--mute);margin-left:10px}
-.about{display:grid;grid-template-columns:1fr 1.6fr;gap:60px}.about p{font-family:'Cormorant Garamond',serif;font-size:23px;line-height:1.5;margin:0 0 18px}.about .sig{font-family:Inter,sans-serif;font-size:14px;color:var(--mute)}
-.glist{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.glist a{background:var(--paper);padding:30px;text-decoration:none;display:block}.glist a:hover{background:#fff}.glist h3{font-size:26px;line-height:1.15;margin:12px 0 10px}.glist p{color:var(--mute);font-size:14.5px;margin:0}
-article.guide{max-width:700px;margin:0 auto;padding:80px 0}article.guide h1{font-size:clamp(40px,5vw,60px);line-height:1.05;margin:16px 0 22px}article.guide .lede{font-family:'Cormorant Garamond',serif;font-size:23px;color:var(--mute);line-height:1.45}article.guide h2{font-size:32px;margin:46px 0 12px}article.guide p{font-size:17px}
-article.guide pre{white-space:pre-wrap;background:var(--paper);border-left:2px solid var(--acc);padding:18px 22px;font:14px/1.6 ui-monospace,Menlo,monospace;color:#4a453d;margin:16px 0}
-.filters{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;margin:0 0 30px;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:16px 0}.filters button,.filters a{background:none;border:0;padding:4px 0;font:inherit;font-size:14px;color:var(--mute);cursor:pointer;text-decoration:none;border-bottom:1px solid transparent}.filters button.on,.filters button:hover{color:var(--ink);border-color:var(--acc)}.filters input{margin-left:auto;min-width:240px;padding:10px 14px;border:1px solid var(--line);background:var(--paper);font:inherit;font-size:14px;color:var(--ink)}.filters input:focus{outline:0;border-color:var(--ink)}.card .cat{color:var(--acc)}.empty{display:none;padding:40px 0;color:var(--mute)}.catlinks{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}.catlinks a{background:var(--paper);padding:22px 24px;text-decoration:none;font-family:"Cormorant Garamond",serif;font-size:24px}.catlinks a span{display:block;font-family:Inter,sans-serif;font-size:13px;color:var(--mute)}.catlinks a:hover{background:#fff}
-.related{margin-top:60px;border-top:1px solid var(--ink);padding-top:24px}.related a.r{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding:16px 0;text-decoration:none}.related a.r b{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500}.related a.r span{color:var(--acc);font-size:14px}
-.buy.soon,.buy.soon:hover{color:var(--mute);border-bottom:1px dashed var(--line);cursor:default}
-.btn.soon,.btn.soon:hover{background:transparent;color:var(--mute);border-color:var(--line);cursor:default}.bundle .btn.soon,.bundle .btn.soon:hover{color:#8e877b;border-color:#4a453d;background:transparent}
-.tag{display:inline-block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:2px 8px;margin-left:10px;line-height:1.5;vertical-align:1px}
-.card .meta>span:first-child{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}.card .meta .tag{margin-left:0}
-.card.is-soon h3,.card.is-soon .pitch{opacity:.78}.set.is-soon{border-color:var(--line)}.set>.kicker{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}.set .tag{margin-left:0}
-.filters button.avail{margin-left:auto}.filters button.avail::before{content:'';display:inline-block;width:9px;height:9px;border:1px solid var(--mute);margin-right:8px;vertical-align:0}.filters button.avail.on::before{background:var(--acc);border-color:var(--acc)}.filters button.avail+input{margin-left:0}
-footer a{text-decoration:none;margin-left:20px}footer a:hover{color:var(--ink)}
-@media(max-width:820px){.about{grid-template-columns:1fr}.mod{padding:36px 24px 28px}}</style>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI prompts for Business &amp; Operations | Carlsson &amp; Co.</title>
+<meta name="description" content="Prompt packs for launching products, finding market gaps, hiring, support, meetings, pitch decks and back-office work. Each is a short PDF with 15 to 20…">
+<link rel="canonical" href="https://streamnerf.github.io/ai-sales-engine/c/business.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Carlsson &amp; Co.">
+<meta property="og:title" content="AI prompts for Business &amp; Operations | Carlsson &amp; Co.">
+<meta property="og:description" content="Prompt packs for launching products, finding market gaps, hiring, support, meetings, pitch decks and back-office work. Each is a short PDF with 15 to 20…">
+<meta property="og:url" content="https://streamnerf.github.io/ai-sales-engine/c/business.html">
+<meta property="og:image" content="https://streamnerf.github.io/ai-sales-engine/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Carlsson &amp; Co. A library of working prompts.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI prompts for Business &amp; Operations | Carlsson &amp; Co.">
+<meta name="twitter:description" content="Prompt packs for launching products, finding market gaps, hiring, support, meetings, pitch decks and back-office work. Each is a short PDF with 15 to 20…">
+<meta name="twitter:image" content="https://streamnerf.github.io/ai-sales-engine/og.png">
+<meta name="theme-color" content="#f7f3ec">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23f7f3ec' width='32' height='32'/%3E%3Crect fill='%23a0522d' width='32' height='3'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='16' fill='%231d1b18'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="../styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://streamnerf.github.io/ai-sales-engine/"}, {"@type": "ListItem", "position": 2, "name": "Categories", "item": "https://streamnerf.github.io/ai-sales-engine/c/"}, {"@type": "ListItem", "position": 3, "name": "Business & Operations", "item": "https://streamnerf.github.io/ai-sales-engine/c/business.html"}]}]}</script>
 <!-- Analytics (cookieless) — not active. Uncomment ONE after creating an account.
 GoatCounter:  <script data-goatcounter="https://YOURCODE.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 Plausible:    <script defer data-domain="streamnerf.github.io" src="https://plausible.io/js/script.js"></script>
 -->
-</head><body><div class="wrap">
-<nav><a class="logo" href="../">Carlsson &amp; Co.</a><div class="links"><a href="../#library">Library</a><a href="../c/">Categories</a><a href="../#sets">Sets</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></div></nav>
-<header class="hero" style="grid-template-columns:1fr;padding-bottom:50px"><div><span class="kicker"><a href="./" style="text-decoration:none">Categories</a></span><h1>Business &amp; Operations</h1><p style="max-width:640px">Prompt packs for launching products, finding market gaps, hiring, support, meetings, pitch decks and back-office work. Each is a short PDF with 15 to 20 prompts.</p></div></header>
-<section style="padding-top:0;border:0"><div class="grid"><article id="ai-sales-engine" class="card" data-cat="business" data-av="1" data-q="the ai sales engine find a product, build the funnel, bring the traffic. 15 prompts in three stages: finding digital products people already buy, building a sales funnel, and driving traffic to it. covers research, offer design, landing page copy, emails and launch planning. for anyone launching a first small digital product. business &amp; operations"><div class="meta"><span><span class="cat">Business &amp; Operations</span></span><span>15 prompts · <span class="price">$29</span></span></div>
-<h3>The AI Sales Engine</h3><p class="pitch">Find a product, build the funnel, bring the traffic.</p><p class="desc">15 prompts in three stages: finding digital products people already buy, building a sales funnel, and driving traffic to it.</p>
-<blockquote>“Score these product ideas [list] 1–10 on demand, ease of creation, price potential, differentiation and my expertise…”</blockquote><div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/bjtzsb" data-slug="ai-sales-engine">Buy · $29</a><button class="prev" data-p="ai-sales-engine">Preview</button></div></article>
-<article id="small-biz-backoffice" class="card" data-cat="business" data-av="1" data-q="the small business back office sops, customer replies and planning for owners who do everything. 20 prompts for the unglamorous side of running a small business: writing standard operating procedures, customer service replies, hiring, simple planning and supplier emails. saves hours each week on writing and thinking work. for shop owners, service businesses and solo founders. business &amp; operations"><div class="meta"><span><span class="cat">Business &amp; Operations</span></span><span>20 prompts · <span class="price">$29</span></span></div>
-<h3>The Small Business Back Office</h3><p class="pitch">SOPs, customer replies and planning for owners who do everything.</p><p class="desc">20 prompts for the unglamorous side of running a small business: writing standard operating procedures, customer service replies, hiring, simple planning and supplier emails.</p>
-<blockquote>“Write a step-by-step standard operating procedure for [task] at my [business]. Include purpose, who does it, tools…”</blockquote><div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/bdoqu" data-slug="small-biz-backoffice">Buy · $29</a><button class="prev" data-p="small-biz-backoffice">Preview</button></div></article>
-<article id="gap-finder" class="card is-soon" data-cat="business" data-av="0" data-q="the gap finder find what buyers keep complaining about, then sell the fix. 18 prompts in three stages: mining the reviews of a niche&#x27;s best sellers, hunting for problems that repeat across many products, and building a small, fast product (checklist, template or mini-guide) that solves the gap, with pricing and launch prompts. research help only; no sales or income are promised. business &amp; operations"><div class="meta"><span><span class="cat">Business &amp; Operations</span><span class="tag">Coming soon</span></span><span>18 prompts · <span class="price">$17</span></span></div>
-<h3>The Gap Finder</h3><p class="pitch">Find what buyers keep complaining about, then sell the fix.</p><p class="desc">18 prompts in three stages: mining the reviews of a niche&#x27;s best sellers, hunting for problems that repeat across many products, and building a small, fast product (checklist, template or mini-guide) that solves the gap, with pricing and launch prompts.</p>
-<blockquote>“I&#x27;m considering these niches: [list]. For each, describe who buys, what they&#x27;re trying to get done, typical price…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="gap-finder" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="gap-finder">Preview</button></div></article>
-<article id="support-desk" class="card is-soon" data-cat="business" data-av="0" data-q="the customer support desk faster, kinder replies and a help centre that answers itself. 16 prompts for customer support: reply templates, tone adjustment, difficult customers, refunds and delays, help-centre articles, faq building, macros and ticket analysis. for small teams and solo founders handling support. business &amp; operations"><div class="meta"><span><span class="cat">Business &amp; Operations</span><span class="tag">Coming soon</span></span><span>16 prompts · <span class="price">$19</span></span></div>
-<h3>The Customer Support Desk</h3><p class="pitch">Faster, kinder replies and a help centre that answers itself.</p><p class="desc">16 prompts for customer support: reply templates, tone adjustment, difficult customers, refunds and delays, help-centre articles, FAQ building, macros and ticket analysis.</p>
-<blockquote>“Write a reply to this customer message [paste] based on our policy [policy]. Acknowledge the issue, give a clear…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="support-desk" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="support-desk">Preview</button></div></article>
-<article id="hiring-handbook" class="card is-soon" data-cat="business" data-av="0" data-q="the hiring handbook job ads, interviews and onboarding for small teams. 20 prompts for hiring and hr admin: role definitions, inclusive job ads, screening, structured interviews, scorecards, reference checks, offer and rejection emails, onboarding plans and policy drafts. practical templates only; check employment law with a qualified adviser. business &amp; operations"><div class="meta"><span><span class="cat">Business &amp; Operations</span><span class="tag">Coming soon</span></span><span>20 prompts · <span class="price">$24</span></span></div>
-<h3>The Hiring Handbook</h3><p class="pitch">Job ads, interviews and onboarding for small teams.</p><p class="desc">20 prompts for hiring and HR admin: role definitions, inclusive job ads, screening, structured interviews, scorecards, reference checks, offer and rejection emails, onboarding plans and policy drafts.</p>
-<blockquote>“Help me define the role of [title] for [team]: purpose, 4–6 outcomes for the first year, must-have skills and…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="hiring-handbook" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="hiring-handbook">Preview</button></div></article>
-<article id="pitch-deck-builder" class="card is-soon" data-cat="business" data-av="0" data-q="the pitch deck builder a clear story for investors, partners and grant panels. 20 prompts for startup founders: problem and solution framing, market sizing logic, business model, slide-by-slide deck, one-pager, investor emails, q&amp;a prep and pitch rehearsal. no promise of funding; the prompts sharpen your story. business &amp; operations"><div class="meta"><span><span class="cat">Business &amp; Operations</span><span class="tag">Coming soon</span></span><span>20 prompts · <span class="price">$24</span></span></div>
-<h3>The Pitch Deck Builder</h3><p class="pitch">A clear story for investors, partners and grant panels.</p><p class="desc">20 prompts for startup founders: problem and solution framing, market sizing logic, business model, slide-by-slide deck, one-pager, investor emails, Q&amp;A prep and pitch rehearsal.</p>
-<blockquote>“Write 10 one-line descriptions of [startup] in the format &#x27;[product] helps [customer] [do something] by…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="pitch-deck-builder" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="pitch-deck-builder">Preview</button></div></article>
-<article id="meeting-master" class="card is-soon" data-cat="business" data-av="0" data-q="the meeting master shorter meetings, clearer notes, actions that actually happen. 15 prompts for meetings: agendas, facilitation, transcript summaries, action lists, decision logs, status updates, async alternatives and recurring meeting reviews. for managers, team leads and anyone drowning in calendar invites. business &amp; operations"><div class="meta"><span><span class="cat">Business &amp; Operations</span><span class="tag">Coming soon</span></span><span>15 prompts · <span class="price">$12</span></span></div>
-<h3>The Meeting Master</h3><p class="pitch">Shorter meetings, clearer notes, actions that actually happen.</p><p class="desc">15 prompts for meetings: agendas, facilitation, transcript summaries, action lists, decision logs, status updates, async alternatives and recurring meeting reviews.</p>
-<blockquote>“Here&#x27;s what I need: [goal]. Should it be a meeting, an email, a doc or a quick call? Explain and draft the…”</blockquote><div class="actions"><span class="buy soon" aria-disabled="true" data-slug="meeting-master" title="Coming soon to the shop">Coming soon</span><button class="prev" data-p="meeting-master">Preview</button></div></article>
-</div></section>
-<section><div class="head"><h2>Related guides</h2></div><div class="glist"><a href="../guides/find-product-gaps-in-reviews.html"><span class="kicker">Guide</span><h3>How to find a product idea in customer reviews</h3><p>A three-step method for mining best-seller reviews, spotting complaints that repeat across products, and turning one gap into a small digital product.</p></a><a href="../guides/excel-formulas-with-chatgpt.html"><span class="kicker">Guide</span><h3>How to get Excel and Google Sheets formulas from ChatGPT</h3><p>Describe what you want in plain English and get a working formula, an explanation, and a fix when it errors.</p></a><a href="../guides/hiring-interview-questions.html"><span class="kicker">Guide</span><h3>Structured interview questions for small teams, built with AI</h3><p>Define the role, write behavioural questions tied to outcomes, and score candidates fairly.</p></a></div></section><section><div class="head"><h2>Other categories</h2></div><div class="catlinks"><a href="marketing.html">Marketing &amp; Content</a><a href="sales.html">Sales &amp; Clients</a><a href="ecommerce.html">E-commerce</a><a href="career.html">Career &amp; Learning</a><a href="creative.html">Writing &amp; Creative</a><a href="tech.html">Tech &amp; Data</a><a href="pros.html">For Professionals</a><a href="life.html">Home &amp; Life</a></div></section>
-<footer><span>© 2026 Carlsson &amp; Co.</span><span><a href="../#library">Library</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></span><span>Payments handled securely by Gumroad.</span></footer>
-</div></body></html>
+</head>
+<body data-root="../">
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="wrap bar-inner"><a class="logo" href="../">Carlsson &amp; Co.</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary"><a href="../#library">Library</a><a href="../c/" aria-current="page">Categories</a><a href="../#sets">Sets</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></nav></div></header>
+<main id="main">
+<div class="wrap">
+<header class="page-hero"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="./">Categories</a></li><li aria-current="page">Business &amp; Operations</li></ol></nav>
+<p class="kicker">Category</p><h1>Business &amp; Operations</h1><p>Prompt packs for launching products, finding market gaps, hiring, support, meetings, pitch decks and back-office work. Each is a short PDF with 15 to 20 prompts. Works with ChatGPT, Claude and Gemini.</p></header>
+<section class="tight"><div class="grid"><article class="card" id="ai-sales-engine" data-cat="business" data-av="1" data-q="the ai sales engine find a product, build the funnel, bring the traffic. 15 prompts in three stages: finding digital products people already buy, building a sales funnel, and driving traffic to it. covers research, offer design, landing page copy, emails and launch planning. for anyone launching a first small digital product. business &amp; operations niche scan step 1 — find winning low-price products pain mining step 1 — find winning low-price products competitor teardown step 1 — find winning low-price products scoring matrix step 1 — find winning low-price products validation plan step 1 — find winning low-price products offer stack step 2 — build the sales funnel landing page copy step 2 — build the sales funnel headline variants step 2 — build the sales funnel order bump &amp; upsell step 2 — build the sales funnel email sequence step 2 — build the sales funnel hook factory step 3 — drive traffic reel scripts step 3 — drive traffic 30-day calendar step 3 — drive traffic lead magnet step 3 — drive traffic ad angles step 3 — drive traffic">
+<div class="meta"><span><a class="cat" href="../c/business.html">Business &amp; Operations</a></span><span>15 prompts · <span class="price">$29</span></span></div>
+<h3><a href="../p/ai-sales-engine/">The AI Sales Engine</a></h3>
+<p class="pitch">Find a product, build the funnel, bring the traffic.</p>
+<p class="desc">15 prompts in three stages: finding digital products people already buy, building a sales funnel, and driving traffic to it.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Score these product ideas [list] 1–10 on demand, ease of creation, price potential, differentiation and my expertise…</blockquote>
+<div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/bjtzsb" data-buy="ai-sales-engine">Buy · $29</a><button type="button" class="prev" data-p="ai-sales-engine" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card" id="small-biz-backoffice" data-cat="business" data-av="1" data-q="the small business back office sops, customer replies and planning for owners who do everything. 20 prompts for the unglamorous side of running a small business: writing standard operating procedures, customer service replies, hiring, simple planning and supplier emails. saves hours each week on writing and thinking work. for shop owners, service businesses and solo founders. business &amp; operations sop writer operations process from a voice note operations opening/closing checklist operations bottleneck finder operations tool stack review operations complaint reply customers faq page customers review response customers policy wording customers customer feedback survey customers job ad people interview scorecard people onboarding plan people difficult conversation people one-page business plan planning &amp; suppliers monthly numbers review planning &amp; suppliers supplier email planning &amp; suppliers pricing review planning &amp; suppliers seasonal plan planning &amp; suppliers weekly owner check-in planning &amp; suppliers">
+<div class="meta"><span><a class="cat" href="../c/business.html">Business &amp; Operations</a></span><span>20 prompts · <span class="price">$29</span></span></div>
+<h3><a href="../p/small-biz-backoffice/">The Small Business Back Office</a></h3>
+<p class="pitch">SOPs, customer replies and planning for owners who do everything.</p>
+<p class="desc">20 prompts for the unglamorous side of running a small business: writing standard operating procedures, customer service replies, hiring, simple planning and supplier emails.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Write a step-by-step standard operating procedure for [task] at my [business]. Include purpose, who does it, tools…</blockquote>
+<div class="actions"><a class="buy" href="https://mcarlsso.gumroad.com/l/bdoqu" data-buy="small-biz-backoffice">Buy · $29</a><button type="button" class="prev" data-p="small-biz-backoffice" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="gap-finder" data-cat="business" data-av="0" data-q="the gap finder find what buyers keep complaining about, then sell the fix. 18 prompts in three stages: mining the reviews of a niche&#x27;s best sellers, hunting for problems that repeat across many products, and building a small, fast product (checklist, template or mini-guide) that solves the gap, with pricing and launch prompts. research help only; no sales or income are promised. business &amp; operations pick the niche stage 1: mine the buyers best-seller shortlist stage 1: mine the buyers review collection plan stage 1: mine the buyers clean the batch stage 1: mine the buyers buyer profile from reviews stage 1: mine the buyers complaint clusters stage 2: hunt the problems filter the one-offs stage 2: hunt the problems unmet-needs reading stage 2: hunt the problems gap scorecard stage 2: hunt the problems sanity check stage 2: hunt the problems solution formats stage 3: build the fix product outline stage 3: build the fix write it in their words stage 3: build the fix pricing options stage 3: build the fix sales page from the gap stage 3: build the fix listing copy stage 3: build the fix launch week plan stage 3: build the fix feedback loop stage 3: build the fix">
+<div class="meta"><span><a class="cat" href="../c/business.html">Business &amp; Operations</a><span class="tag">Coming soon</span></span><span>18 prompts · <span class="price">$17</span></span></div>
+<h3><a href="../p/gap-finder/">The Gap Finder</a></h3>
+<p class="pitch">Find what buyers keep complaining about, then sell the fix.</p>
+<p class="desc">18 prompts in three stages: mining the reviews of a niche's best sellers, hunting for problems that repeat across many products, and building a small, fast product (checklist, template or mini-guide) that solves the gap, with pricing and launch prompts.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>I'm considering these niches: [list]. For each, describe who buys, what they're trying to get done, typical price…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="gap-finder">Coming soon</span><button type="button" class="prev" data-p="gap-finder" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="support-desk" data-cat="business" data-av="0" data-q="the customer support desk faster, kinder replies and a help centre that answers itself. 16 prompts for customer support: reply templates, tone adjustment, difficult customers, refunds and delays, help-centre articles, faq building, macros and ticket analysis. for small teams and solo founders handling support. business &amp; operations reply draft reply tone adjuster reply angry customer reply saying no kindly reply delay notice reply bug report reply reply help article self-serve faq from tickets self-serve macro library self-serve onboarding emails self-serve ticket tagging improve weekly support report improve customer feedback loop improve escalation guide improve support style guide improve satisfaction survey improve">
+<div class="meta"><span><a class="cat" href="../c/business.html">Business &amp; Operations</a><span class="tag">Coming soon</span></span><span>16 prompts · <span class="price">$19</span></span></div>
+<h3><a href="../p/support-desk/">The Customer Support Desk</a></h3>
+<p class="pitch">Faster, kinder replies and a help centre that answers itself.</p>
+<p class="desc">16 prompts for customer support: reply templates, tone adjustment, difficult customers, refunds and delays, help-centre articles, FAQ building, macros and ticket analysis.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Write a reply to this customer message [paste] based on our policy [policy]. Acknowledge the issue, give a clear…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="support-desk">Coming soon</span><button type="button" class="prev" data-p="support-desk" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="hiring-handbook" data-cat="business" data-av="0" data-q="the hiring handbook job ads, interviews and onboarding for small teams. 20 prompts for hiring and hr admin: role definitions, inclusive job ads, screening, structured interviews, scorecards, reference checks, offer and rejection emails, onboarding plans and policy drafts. practical templates only; check employment law with a qualified adviser. business &amp; operations role scorecard define job ad define job ad review define where to post define screening questions screen &amp; interview structured interview screen &amp; interview work sample task screen &amp; interview interview scorecard screen &amp; interview debrief agenda screen &amp; interview reference check questions screen &amp; interview interview invitation communicate kind rejection communicate offer email communicate 30-60-90 plan onboard first-day schedule onboard welcome message onboard policy draft hr admin one-to-one template hr admin performance review form hr admin exit interview hr admin">
+<div class="meta"><span><a class="cat" href="../c/business.html">Business &amp; Operations</a><span class="tag">Coming soon</span></span><span>20 prompts · <span class="price">$24</span></span></div>
+<h3><a href="../p/hiring-handbook/">The Hiring Handbook</a></h3>
+<p class="pitch">Job ads, interviews and onboarding for small teams.</p>
+<p class="desc">20 prompts for hiring and HR admin: role definitions, inclusive job ads, screening, structured interviews, scorecards, reference checks, offer and rejection emails, onboarding plans and policy drafts.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Help me define the role of [title] for [team]: purpose, 4–6 outcomes for the first year, must-have skills and…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="hiring-handbook">Coming soon</span><button type="button" class="prev" data-p="hiring-handbook" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="pitch-deck-builder" data-cat="business" data-av="0" data-q="the pitch deck builder a clear story for investors, partners and grant panels. 20 prompts for startup founders: problem and solution framing, market sizing logic, business model, slide-by-slide deck, one-pager, investor emails, q&amp;a prep and pitch rehearsal. no promise of funding; the prompts sharpen your story. business &amp; operations one-liner story problem slide story solution and why now story market sizing logic story business model story competition story traction slide story team slide story the ask story slide-by-slide deck deck design notes deck demo slide deck one-pager outreach cold investor email outreach warm intro request outreach investor update outreach investor q&amp;a pressure test weakest slide pressure test pitch script pressure test grant/accelerator version pressure test">
+<div class="meta"><span><a class="cat" href="../c/business.html">Business &amp; Operations</a><span class="tag">Coming soon</span></span><span>20 prompts · <span class="price">$24</span></span></div>
+<h3><a href="../p/pitch-deck-builder/">The Pitch Deck Builder</a></h3>
+<p class="pitch">A clear story for investors, partners and grant panels.</p>
+<p class="desc">20 prompts for startup founders: problem and solution framing, market sizing logic, business model, slide-by-slide deck, one-pager, investor emails, Q&amp;A prep and pitch rehearsal.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Write 10 one-line descriptions of [startup] in the format '[product] helps [customer] [do something] by…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="pitch-deck-builder">Coming soon</span><button type="button" class="prev" data-p="pitch-deck-builder" aria-haspopup="dialog">Preview</button></div>
+</article>
+<article class="card is-soon" id="meeting-master" data-cat="business" data-av="0" data-q="the meeting master shorter meetings, clearer notes, actions that actually happen. 15 prompts for meetings: agendas, facilitation, transcript summaries, action lists, decision logs, status updates, async alternatives and recurring meeting reviews. for managers, team leads and anyone drowning in calendar invites. business &amp; operations should this be a meeting? before agenda builder before pre-read before facilitation script during decision method during brainstorm structure during summary from transcript after action email after decision log after status update after recurring meeting review fix the calendar async standup fix the calendar one-to-one agenda fix the calendar retrospective fix the calendar meeting-free day plan fix the calendar">
+<div class="meta"><span><a class="cat" href="../c/business.html">Business &amp; Operations</a><span class="tag">Coming soon</span></span><span>15 prompts · <span class="price">$12</span></span></div>
+<h3><a href="../p/meeting-master/">The Meeting Master</a></h3>
+<p class="pitch">Shorter meetings, clearer notes, actions that actually happen.</p>
+<p class="desc">15 prompts for meetings: agendas, facilitation, transcript summaries, action lists, decision logs, status updates, async alternatives and recurring meeting reviews.</p>
+<p class="eyebrow">Sample prompt</p><blockquote>Here's what I need: [goal]. Should it be a meeting, an email, a doc or a quick call? Explain and draft the…</blockquote>
+<div class="actions"><span class="buy soon" data-buy="meeting-master">Coming soon</span><button type="button" class="prev" data-p="meeting-master" aria-haspopup="dialog">Preview</button></div>
+</article></div></section>
+<section><div class="head"><h2>Related guides</h2></div><div class="glist"><a href="../guides/find-product-gaps-in-reviews.html"><span class="kicker">Guide</span><h3>How to find a product idea in customer reviews</h3><p>A three-step method for mining best-seller reviews, spotting complaints that repeat across products, and turning one gap into a small digital product.</p></a><a href="../guides/excel-formulas-with-chatgpt.html"><span class="kicker">Guide</span><h3>How to get Excel and Google Sheets formulas from ChatGPT</h3><p>Describe what you want in plain English and get a working formula, an explanation, and a fix when it errors.</p></a><a href="../guides/hiring-interview-questions.html"><span class="kicker">Guide</span><h3>Structured interview questions for small teams, built with AI</h3><p>Define the role, write behavioural questions tied to outcomes, and score candidates fairly.</p></a></div></section>
+<section><div class="head"><h2>Other categories</h2></div><div class="catlinks"><a href="marketing.html">Marketing &amp; Content</a><a href="sales.html">Sales &amp; Clients</a><a href="ecommerce.html">E-commerce</a><a href="career.html">Career &amp; Learning</a><a href="creative.html">Writing &amp; Creative</a><a href="tech.html">Tech &amp; Data</a><a href="pros.html">For Professionals</a><a href="life.html">Home &amp; Life</a></div></section>
+</div>
+</main>
+<footer><div class="wrap foot"><span>© 2026 Carlsson &amp; Co.</span><nav aria-label="Footer"><a href="../#library">Library</a><a href="../c/">Categories</a><a href="../guides/">Guides</a><a href="../#about">About</a><a href="../#faq">Questions</a></nav><span>Payments handled securely by Gumroad.</span></div></footer>
+<dialog id="pv" aria-labelledby="pv-title">
+<div class="mod">
+<div class="mod-bar"><p class="kicker">Preview</p><button type="button" class="x" aria-label="Close preview">Close</button></div>
+<h2 id="pv-title"></h2>
+<p class="pitch" id="pv-pitch"></p>
+<ol id="pv-list"></ol>
+<div class="mod-foot"><p id="pv-meta"></p><div class="mod-actions">
+<a class="btn solid" id="pv-buy" hidden>Buy</a>
+<span class="btn soon" id="pv-soon" hidden>Coming soon</span>
+<a class="btn" id="pv-more" href="../">View the pack</a>
+</div></div>
+</div></dialog><script type="application/json" id="preview-data">{"ai-sales-engine": {"t": "The AI Sales Engine", "p": 29, "n": 15, "u": "https://mcarlsso.gumroad.com/l/bjtzsb", "q": [["Niche scan", "Act as a digital-product market researcher. For the niche [niche], list 10 digital products priced $9–$49 that people already buy (templates, guides, toolkits). For each: target buyer, painful problem solved, where it's sold, and a demand signal I can verify myself."], ["Pain mining", "Here are reviews/comments from my audience: [paste]. Group them into the 5 most frequent frustrations, quote exact phrases, and suggest a small digital product for each."], ["Competitor teardown", "Analyze this competing product page: [paste text]. Identify its promise, price, bonuses, weaknesses, and 3 ways I could make a clearly better or more specific offer."]]}, "small-biz-backoffice": {"t": "The Small Business Back Office", "p": 29, "n": 20, "u": "https://mcarlsso.gumroad.com/l/bdoqu", "q": [["SOP writer", "Write a step-by-step standard operating procedure for [task] at my [business]. Include purpose, who does it, tools needed, steps, and a quality checklist."], ["Process from a voice note", "Here's how I explain [process] out loud: [paste transcript]. Turn it into a clean checklist a new employee could follow."], ["Opening/closing checklist", "Create opening and closing checklists for my [type of shop/business]."]]}, "gap-finder": {"t": "The Gap Finder", "p": 17, "n": 18, "u": "", "q": [["Pick the niche", "I'm considering these niches: [list]. For each, describe who buys, what they're trying to get done, typical price points, and where buyers leave detailed reviews (marketplaces, app stores, forums). Recommend 2 to research first."], ["Best-seller shortlist", "Help me build a shortlist of the top-selling products in [niche] on [platform]. Give me the search terms, filters and signals (review count, ranking, recency) I should use, and a table template to record 10 products."], ["Review collection plan", "Design a simple process for collecting reviews from these [number] products: which star ratings to prioritise (hint: 2–4 stars), how many per product, and a spreadsheet layout with columns for product, rating, quote and theme."]]}, "support-desk": {"t": "The Customer Support Desk", "p": 19, "n": 16, "u": "", "q": [["Reply draft", "Write a reply to this customer message [paste] based on our policy [policy]. Acknowledge the issue, give a clear answer or next step, and keep it under 120 words."], ["Tone adjuster", "Rewrite this reply [paste] to be warmer and clearer while keeping the facts identical."], ["Angry customer", "This customer is upset: [paste]. Write a calm reply that acknowledges their frustration, avoids blame, and offers [options]."]]}, "hiring-handbook": {"t": "The Hiring Handbook", "p": 24, "n": 20, "u": "", "q": [["Role scorecard", "Help me define the role of [title] for [team]: purpose, 4–6 outcomes for the first year, must-have skills and nice-to-haves."], ["Job ad", "Write an inclusive job ad for [role] based on this scorecard [paste]: what you'll do, what we offer, what we're looking for, salary range [range], how to apply. Avoid jargon and gendered language."], ["Job ad review", "Review this job ad for unnecessary requirements, biased wording and unclear points: [paste]."]]}, "pitch-deck-builder": {"t": "The Pitch Deck Builder", "p": 24, "n": 20, "u": "", "q": [["One-liner", "Write 10 one-line descriptions of [startup] in the format '[product] helps [customer] [do something] by [how]'."], ["Problem slide", "Help me describe the problem for [customer] with a short story, a fact I should source, and why existing solutions fall short."], ["Solution and why now", "Explain our solution [description] and why now is the right time, in 3 sentences each."]]}, "meeting-master": {"t": "The Meeting Master", "p": 12, "n": 15, "u": "", "q": [["Should this be a meeting?", "Here's what I need: [goal]. Should it be a meeting, an email, a doc or a quick call? Explain and draft the alternative if not a meeting."], ["Agenda builder", "Write a [minutes]-minute agenda for [meeting purpose] with [attendees], with timed items, owners and the decision needed for each."], ["Pre-read", "Turn this information [paste] into a one-page pre-read people can digest in 5 minutes."]]}}</script>
+<script>
+(function () {
+  var bar = document.querySelector(".bar");
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("site-nav");
+
+  if (toggle && bar && nav) {
+    function setOpen(open) {
+      bar.classList.toggle("is-open", open);
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.textContent = open ? "Close" : "Menu";
+    }
+    toggle.addEventListener("click", function () {
+      setOpen(!bar.classList.contains("is-open"));
+    });
+    nav.addEventListener("click", function (event) {
+      if (event.target.closest("a")) setOpen(false);
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key !== "Escape" || !bar.classList.contains("is-open")) return;
+      if (document.querySelector("dialog[open]")) return;
+      setOpen(false);
+      toggle.focus();
+    });
+  }
+
+  var lib = document.getElementById("lib");
+  if (lib) {
+    var cat = "all";
+    var onlyAvail = false;
+    var touched = false;
+    var query = document.getElementById("q");
+    var buttons = Array.prototype.slice.call(document.querySelectorAll(".filters [data-c]"));
+    var avail = document.querySelector(".filters [data-av]");
+    var allcard = document.getElementById("allcard");
+    var none = document.getElementById("none");
+    var status = document.getElementById("status");
+
+    function run() {
+      var words = query.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      var shown = 0;
+      lib.querySelectorAll(".card[data-cat]").forEach(function (card) {
+        var text = card.getAttribute("data-q") || "";
+        var ok = (cat === "all" || card.getAttribute("data-cat") === cat)
+          && (!onlyAvail || card.getAttribute("data-av") === "1")
+          && words.every(function (word) { return text.indexOf(word) !== -1; });
+        card.hidden = !ok;
+        if (ok) shown += 1;
+      });
+      if (allcard) allcard.hidden = !(cat === "all" && words.length === 0 && !onlyAvail);
+      if (none) none.hidden = shown !== 0;
+      if (status && touched) {
+        status.textContent = shown === 0
+          ? "No packs match."
+          : shown + (shown === 1 ? " pack shown." : " packs shown.");
+      }
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        touched = true;
+        cat = button.getAttribute("data-c");
+        buttons.forEach(function (other) {
+          var on = other === button;
+          other.classList.toggle("on", on);
+          other.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, "", cat === "all" ? window.location.pathname + window.location.search : "#cat=" + cat);
+        }
+        run();
+      });
+    });
+    if (query) query.addEventListener("input", function () { touched = true; run(); });
+    if (avail) {
+      avail.addEventListener("click", function () {
+        touched = true;
+        onlyAvail = !onlyAvail;
+        avail.classList.toggle("on", onlyAvail);
+        avail.setAttribute("aria-pressed", onlyAvail ? "true" : "false");
+        run();
+      });
+    }
+    var hash = window.location.hash.match(/^#cat=([a-z0-9-]+)$/);
+    if (hash) {
+      var initial = buttons.filter(function (button) {
+        return button.getAttribute("data-c") === hash[1];
+      })[0];
+      if (initial) initial.click();
+    }
+  }
+
+  var dialog = document.getElementById("pv");
+  var dataEl = document.getElementById("preview-data");
+  if (!dialog || !dataEl) return;
+
+  var previews = JSON.parse(dataEl.textContent);
+  var opener = null;
+  var title = document.getElementById("pv-title");
+  var pitch = document.getElementById("pv-pitch");
+  var list = document.getElementById("pv-list");
+  var meta = document.getElementById("pv-meta");
+  var buy = document.getElementById("pv-buy");
+  var soon = document.getElementById("pv-soon");
+  var more = document.getElementById("pv-more");
+  var root = document.body.getAttribute("data-root") || "./";
+
+  function openPreview(slug, trigger) {
+    var item = previews[slug];
+    if (!item) return;
+    title.textContent = item.t;
+    pitch.textContent = item.q.length + " of the " + item.n + " prompts in this pack";
+    list.replaceChildren();
+    item.q.forEach(function (row) {
+      var li = document.createElement("li");
+      var name = document.createElement("b");
+      var text = document.createElement("p");
+      name.textContent = row[0];
+      text.textContent = row[1];
+      li.append(name, text);
+      list.append(li);
+    });
+    meta.textContent = item.n + " prompts in the PDF.";
+    more.href = root + "p/" + slug + "/";
+    if (item.u) {
+      buy.href = item.u;
+      buy.textContent = "Buy · $" + item.p;
+      buy.setAttribute("data-buy", slug);
+      buy.hidden = false;
+      soon.hidden = true;
+    } else {
+      buy.hidden = true;
+      buy.removeAttribute("href");
+      soon.hidden = false;
+    }
+    opener = trigger || null;
+    dialog.showModal();
+    var closeButton = dialog.querySelector(".x");
+    if (closeButton) closeButton.focus();
+  }
+
+  document.addEventListener("click", function (event) {
+    var button = event.target.closest(".prev");
+    if (!button) return;
+    openPreview(button.getAttribute("data-p"), button);
+  });
+  dialog.querySelector(".x").addEventListener("click", function () { dialog.close(); });
+  dialog.addEventListener("click", function (event) {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener("close", function () {
+    if (opener) opener.focus();
+  });
+})();
+
+</script>
+</body>
+</html>
