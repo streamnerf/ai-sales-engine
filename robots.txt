@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://streamnerf.github.io/ai-sales-engine/sitemap.xml
+Sitemap: https://carlssonandcolibrary.se/sitemap.xml
