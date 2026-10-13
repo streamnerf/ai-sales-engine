@@ -770,3 +770,14 @@ dialog::backdrop { background: rgba(29, 27, 24, 0.5); }
 .fp-more { color: var(--acc); font-size: 14px; text-decoration: none; }
 .fp-more:hover { text-decoration: underline; }
 @media (max-width: 400px) { .fp-list { grid-template-columns: 1fr; } }
+.page-hero .fp-monday { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; margin-top: 22px; font-size: 15px; }
+.mp-list { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); margin-bottom: 32px; }
+.mp-card .kicker { margin: 0 0 6px; }
+.mp-label { font: 500 12px Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--acc); margin: 0 0 8px; }
+.mp-example { border-left: 3px solid var(--acc); padding: 4px 0 4px 16px; }
+.mp-example pre { white-space: pre-wrap; margin: 0; font: italic 15px/1.6 Georgia, serif; color: var(--mute); }
+.mp-notice { background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--acc); padding: 32px 28px; margin-bottom: 32px; max-width: 720px; }
+.mp-notice h2 { font-size: 30px; margin: 0 0 10px; }
+.mp-notice p { color: var(--mute); margin: 0; }
+.mp-notice a, .mp-foot a { color: var(--acc); }
+.mp-foot { color: var(--mute); font-size: 15px; margin: 0 0 64px; }
