@@ -781,3 +781,8 @@ dialog::backdrop { background: rgba(29, 27, 24, 0.5); }
 .mp-notice p { color: var(--mute); margin: 0; }
 .mp-notice a, .mp-foot a { color: var(--acc); }
 .mp-foot { color: var(--mute); font-size: 15px; margin: 0 0 64px; }
+
+/* Sale pricing */
+.tag.sale { color: var(--acc); border-color: currentColor; }
+.buybox .kicker .tag { margin-left: 8px; vertical-align: 1px; }
+.meta s.was { color: var(--mute); text-decoration: line-through; margin-left: 4px; }
