@@ -805,3 +805,50 @@ dialog::backdrop { background: rgba(29, 27, 24, 0.5); }
 .hero-stage.is-3d img{opacity:0;transition:opacity .6s ease .1s}
 @media (max-width:900px){.hero-3d{grid-template-columns:1fr;padding:40px 0 28px;gap:8px}.hero-stage{justify-self:center;max-width:360px;margin-top:0}.hero-stage canvas{display:none}}
 @media (prefers-reduced-motion:reduce){.hero-stage canvas{display:none}}
+
+/* Covers, Look inside, About page */
+.card .cover, .set .cover {
+  display: block;
+  margin: -32px -28px 22px;
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  background: var(--soft);
+}
+.set .cover { border-bottom-color: var(--ink); }
+.card .cover img, .set .cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  transition: transform 0.6s ease;
+}
+.card:hover .cover img, .set:hover .cover img { transform: scale(1.015); }
+.pcover { margin: 28px 0 4px; max-width: 680px; border: 1px solid var(--line); background: var(--soft); }
+.pcover img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; }
+.look-pages { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: start; }
+.look figure { margin: 0; }
+.look img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 1px 0 var(--line), 0 14px 30px -18px rgba(29, 27, 24, 0.28);
+}
+.look figcaption { font-size: 13px; color: var(--mute); margin-top: 10px; }
+.about-page .about-list { list-style: none; padding: 0; margin: 0 0 18px; }
+.about-page .about-list li { border-top: 1px solid var(--line); padding: 14px 0; font-size: 17px; }
+.about-page .about-list b { font-weight: 500; }
+.about-page .about-sign {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 22px;
+  margin-top: 28px;
+  color: var(--mute);
+}
+@media (max-width: 900px) {
+  .card .cover, .set .cover { margin: -24px -18px 18px; }
+  .pcover { margin-top: 20px; }
+}
+@media (max-width: 560px) { .look-pages { gap: 12px; } }
+@media (prefers-reduced-motion: reduce) { .card:hover .cover img, .set:hover .cover img { transform: none; } }
