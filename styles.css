@@ -794,3 +794,14 @@ dialog::backdrop { background: rgba(29, 27, 24, 0.5); }
 .buybox .kicker .tag { margin-left: 8px; vertical-align: 1px; }
 .meta s.was { color: var(--mute); text-decoration: line-through; margin-left: 4px; }
 .buybox .bprice s { color: var(--mute); }
+
+/* 3D hero on the home page. Static image by default; canvas only on wide screens with WebGL and motion allowed. */
+.hero-3d{grid-template-columns:1.1fr 1fr;align-items:center;padding:56px 0 48px}
+.hero-3d .hero-copy h1{margin-bottom:22px}
+.hero-stage{position:relative;aspect-ratio:12/11;max-width:520px;width:100%;justify-self:end}
+.hero-stage img,.hero-stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-stage canvas{opacity:0;transition:opacity .6s ease}
+.hero-stage.is-3d canvas{opacity:1}
+.hero-stage.is-3d img{opacity:0;transition:opacity .6s ease .1s}
+@media (max-width:900px){.hero-3d{grid-template-columns:1fr;padding:40px 0 28px;gap:8px}.hero-stage{justify-self:center;max-width:360px;margin-top:0}.hero-stage canvas{display:none}}
+@media (prefers-reduced-motion:reduce){.hero-stage canvas{display:none}}
