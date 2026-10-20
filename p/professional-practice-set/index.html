@@ -33,12 +33,12 @@
 </head>
 <body data-root="../../">
 <a class="skip" href="#main">Skip to content</a>
-<header class="bar"><div class="wrap bar-inner"><a class="logo" href="../../">Carlsson &amp; Co.</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary"><a href="../../#library" aria-current="page">Library</a><a href="../../c/">Categories</a><a href="../../#sets">Sets</a><a href="../../guides/">Guides</a><a href="../../free/">Free prompts</a><a href="../../about/">About</a><a href="../../#faq">Questions</a></nav></div></header>
+<aside class="cbar" aria-label="Offer"><div class="wrap cbar-inner"><p><span class="cbar-head">30% off everything</span><span class="cbar-with"> with code </span><span class="cbar-sep" aria-hidden="true"> · </span><span class="cbar-code" translate="no">CALM30</span><span class="cbar-note">, applied automatically at checkout</span></p><button type="button" class="cbar-copy" data-code="CALM30"><span class="sr">Copy code CALM30</span><span aria-hidden="true">Copy</span></button><span class="sr" id="cbar-status" aria-live="polite"></span></div></aside><header class="bar"><div class="wrap bar-inner"><a class="logo" href="../../">Carlsson &amp; Co.</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary"><a href="../../#library" aria-current="page">Library</a><a href="../../c/">Categories</a><a href="../../#sets">Sets</a><a href="../../guides/">Guides</a><a href="../../free/">Free prompts</a><a href="../../about/">About</a><a href="../../#faq">Questions</a></nav></div></header>
 <main id="main">
 <div class="wrap">
 <header class="product">
 <div class="product-intro"><nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../../#sets">Sets</a></li><li aria-current="page">The Professional Practice Set</li></ol></nav><p class="kicker">Set · 6 packs · 109 prompts</p><h1 class="bt"><span class="w" style="--i:0">The</span> <span class="w" style="--i:1">Professional</span> <span class="w" style="--i:2">Practice</span> <span class="w" style="--i:3">Set</span></h1><p class="pitch bt-after">Client communication and admin for independent practitioners.</p><figure class="pcover"><img class="" src="../../img/covers/professional-practice-set-800.webp" srcset="../../img/covers/professional-practice-set-800.webp 800w, ../../img/covers/professional-practice-set-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 680px" width="800" height="600" alt="Cover of The Professional Practice Set" decoding="async" fetchpriority="high"></figure></div>
-<aside class="buybox" aria-label="Purchase"><p class="kicker">PDF</p><p class="bprice">$79<s aria-hidden="true">$129</s></p><p class="fine">6 packs, 109 prompts. $129 if you buy them separately. Checkout and delivery are handled by Gumroad.</p><a class="btn solid" href="https://mcarlsso.gumroad.com/l/hruvun?utm_source=carlssonandcolibrary&amp;utm_medium=site&amp;utm_campaign=set&amp;utm_content=professional-practice-set" data-buy="professional-practice-set">Buy the set · $79</a></aside>
+<aside class="buybox" aria-label="Purchase"><p class="kicker">PDF</p><p class="bprice">$79<s aria-hidden="true">$129</s></p><p class="fine">6 packs, 109 prompts. $129 if you buy them separately. Checkout and delivery are handled by Gumroad.</p><a class="btn solid" href="https://mcarlsso.gumroad.com/l/hruvun?offer_code=CALM30&amp;utm_source=carlssonandcolibrary&amp;utm_medium=site&amp;utm_campaign=set&amp;utm_content=professional-practice-set" data-buy="professional-practice-set">Buy the set · $79</a><p class="cnote">30% off with code <b translate="no">CALM30</b>, applied automatically at checkout.</p></aside>
 <div class="product-body"><p class="lede">6 packs in one PDF: The Independent Consultant's Kit, The Coaching Practice Kit, Practice Admin for Therapists, Law Office Admin Assistant, The Photographer's Studio Desk, The Fitness Coach's Business Kit. 109 prompts, worth $129 bought separately.</p>
 <section class="block look"><div class="head"><h2>Look inside</h2><p>Real pages from the PDF (13 pages, A4). The first part of the opening page is shown as it is; the rest is blurred so the pack stays worth buying.</p></div><div class="look-pages"><figure><img src="../../img/look/professional-practice-set-1.webp" width="720" height="1019" alt="Page 2 of the The Professional Practice Set PDF" loading="lazy" decoding="async"><figcaption>Page 2 of 13. The rest is blurred here.</figcaption></figure><figure><img src="../../img/look/professional-practice-set-2.webp" width="720" height="588" alt="Page 3 of the The Professional Practice Set PDF" loading="lazy" decoding="async"><figcaption>Page 3, blurred.</figcaption></figure></div></section>
 <section class="block"><div class="head"><h2>What's inside</h2><p>The packs in this set, also sold on their own.</p></div><ul class="member-list"><li><a href="../../p/consultant-kit/">The Independent Consultant's Kit</a><span>18 prompts · $24</span></li><li><a href="../../p/coaching-practice/">The Coaching Practice Kit</a><span>16 prompts · $19</span></li><li><a href="../../p/practice-admin-therapists/">Practice Admin for Therapists</a><span>19 prompts · $19</span></li><li><a href="../../p/law-office-admin/">Law Office Admin Assistant</a><span>20 prompts · $24</span></li><li><a href="../../p/photographer-studio/">The Photographer's Studio Desk</a><span>19 prompts · $19</span></li><li><a href="../../p/fitness-coach-pro/">The Fitness Coach's Business Kit</a><span>17 prompts · $24</span></li></ul></section>
@@ -51,6 +51,23 @@
 <footer><div class="wrap foot"><span>© 2026 Carlsson &amp; Co.</span><nav aria-label="Footer"><a href="../../#library">Library</a><a href="../../c/">Categories</a><a href="../../guides/">Guides</a><a href="../../free/">Free prompts</a><a href="../../about/">About</a><a href="../../#faq">Questions</a></nav><span>Payments handled securely by Gumroad.</span></div></footer>
 
 <script>
+(function () {
+  var copy = document.querySelector(".cbar-copy");
+  if (copy && navigator.clipboard && window.isSecureContext) {
+    copy.classList.add("is-ready");
+    copy.addEventListener("click", function () {
+      var code = copy.getAttribute("data-code");
+      var status = document.getElementById("cbar-status");
+      navigator.clipboard.writeText(code).then(function () {
+        copy.classList.add("is-done");
+        copy.lastChild.textContent = "Copied";
+        if (status) status.textContent = "Code " + code + " copied.";
+        setTimeout(function () { copy.classList.remove("is-done"); copy.lastChild.textContent = "Copy"; }, 2200);
+      }).catch(function () {});
+    });
+  }
+})();
+
 (function () {
   var bar = document.querySelector(".bar");
   var toggle = document.querySelector(".nav-toggle");

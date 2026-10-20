@@ -33,7 +33,7 @@
 </head>
 <body data-root="../">
 <a class="skip" href="#main">Skip to content</a>
-<header class="bar"><div class="wrap bar-inner"><a class="logo" href="../">Carlsson &amp; Co.</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary"><a href="../#library">Library</a><a href="../c/">Categories</a><a href="../#sets">Sets</a><a href="../guides/" aria-current="page">Guides</a><a href="../free/">Free prompts</a><a href="../about/">About</a><a href="../#faq">Questions</a></nav></div></header>
+<aside class="cbar" aria-label="Offer"><div class="wrap cbar-inner"><p><span class="cbar-head">30% off everything</span><span class="cbar-with"> with code </span><span class="cbar-sep" aria-hidden="true"> · </span><span class="cbar-code" translate="no">CALM30</span><span class="cbar-note">, applied automatically at checkout</span></p><button type="button" class="cbar-copy" data-code="CALM30"><span class="sr">Copy code CALM30</span><span aria-hidden="true">Copy</span></button><span class="sr" id="cbar-status" aria-live="polite"></span></div></aside><header class="bar"><div class="wrap bar-inner"><a class="logo" href="../">Carlsson &amp; Co.</a><button type="button" class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" aria-label="Primary"><a href="../#library">Library</a><a href="../c/">Categories</a><a href="../#sets">Sets</a><a href="../guides/" aria-current="page">Guides</a><a href="../free/">Free prompts</a><a href="../about/">About</a><a href="../#faq">Questions</a></nav></div></header>
 <main id="main">
 <div class="wrap"><article class="guide">
 <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../">Home</a></li><li><a href="./">Guides</a></li><li aria-current="page">A salary negotiation script you can practise with AI</li></ol></nav>
@@ -60,6 +60,23 @@
 <footer><div class="wrap foot"><span>© 2026 Carlsson &amp; Co.</span><nav aria-label="Footer"><a href="../#library">Library</a><a href="../c/">Categories</a><a href="../guides/">Guides</a><a href="../free/">Free prompts</a><a href="../about/">About</a><a href="../#faq">Questions</a></nav><span>Payments handled securely by Gumroad.</span></div></footer>
 
 <script>
+(function () {
+  var copy = document.querySelector(".cbar-copy");
+  if (copy && navigator.clipboard && window.isSecureContext) {
+    copy.classList.add("is-ready");
+    copy.addEventListener("click", function () {
+      var code = copy.getAttribute("data-code");
+      var status = document.getElementById("cbar-status");
+      navigator.clipboard.writeText(code).then(function () {
+        copy.classList.add("is-done");
+        copy.lastChild.textContent = "Copied";
+        if (status) status.textContent = "Code " + code + " copied.";
+        setTimeout(function () { copy.classList.remove("is-done"); copy.lastChild.textContent = "Copy"; }, 2200);
+      }).catch(function () {});
+    });
+  }
+})();
+
 (function () {
   var bar = document.querySelector(".bar");
   var toggle = document.querySelector(".nav-toggle");

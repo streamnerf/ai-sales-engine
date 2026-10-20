@@ -929,3 +929,39 @@ html.lenis { scroll-behavior: auto; }
   100% { transform: translate3d(-5%, 5%, 0) rotate(-6deg) scale(1.02); }
 }
 .pcover { overflow: hidden; }
+
+/* Campaign bar (CAMPAIGN in sitegen/data.py). Server-rendered, fixed height: no layout shift. */
+.cbar { background: var(--acc); color: #fbf6ee; font-size: 13.5px; letter-spacing: 0.02em; }
+.cbar-inner { display: flex; align-items: center; justify-content: center; gap: 14px; min-height: 40px; }
+.cbar p { margin: 0; line-height: 1.3; }
+.cbar-head { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 18px; letter-spacing: 0; }
+.cbar-sep { display: none; }
+.cbar-note { opacity: 0.85; }
+.cbar-code {
+  display: inline-block; position: relative; overflow: hidden;
+  padding: 1px 8px; margin-left: 2px; border: 1px dashed rgba(251, 246, 238, 0.7); border-radius: 3px;
+  font-weight: 500; letter-spacing: 0.12em; user-select: all;
+}
+.cbar-copy {
+  visibility: hidden; font: 500 12px Inter, system-ui, sans-serif; letter-spacing: 0.08em; text-transform: uppercase;
+  color: #fbf6ee; background: transparent; border: 1px solid rgba(251, 246, 238, 0.55); border-radius: 999px;
+  padding: 0 12px; min-height: 28px; min-width: 76px; cursor: pointer; transition: background 0.2s, color 0.2s;
+}
+.cbar-copy.is-ready { visibility: visible; }
+.cbar-copy:hover, .cbar-copy.is-done { background: #fbf6ee; color: var(--acc); }
+.cbar :focus-visible { outline-color: #fbf6ee; }
+@media (prefers-reduced-motion: no-preference) {
+  .cbar-code::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(110deg, transparent 30%, rgba(255, 250, 242, 0.45) 50%, transparent 70%);
+    transform: translateX(-120%); animation: wow-shine 1.6s cubic-bezier(0.22, 1, 0.36, 1) 1.8s 1 both;
+  }
+}
+@media (max-width: 700px) {
+  .cbar-inner { gap: 10px; min-height: 44px; }
+  .cbar-with, .cbar-note { display: none; }
+  .cbar-sep { display: inline; }
+  .cbar-head { font-size: 17px; }
+}
+.cnote { font-size: 13.5px; color: var(--acc); margin: 12px 0 0; }
+.cnote b { font-weight: 500; letter-spacing: 0.08em; }
