@@ -865,3 +865,67 @@ dialog::backdrop { background: rgba(29, 27, 24, 0.5); }
 }
 @media (max-width: 560px) { .look-pages { gap: 12px; } }
 @media (prefers-reduced-motion: reduce) { .card:hover .cover img, .set:hover .cover img { transform: none; } }
+
+/* ---------- Motion layer (motion/wow.js). Everything below is enhancement only. ---------- */
+html.lenis, html.lenis body { height: auto; }
+html.lenis { scroll-behavior: auto; }
+.lenis [data-lenis-prevent] { overscroll-behavior: contain; }
+.w { display: inline-block; }
+.count { display: inline-block; font-variant-numeric: tabular-nums; }
+.step-n {
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+  font-size: 18px;
+  color: var(--acc);
+  margin-bottom: 2px;
+}
+.how .steps > div { position: relative; }
+.step-line {
+  position: absolute; left: 0; right: 0; top: -1px; height: 2px;
+  background: var(--acc); transform-origin: 0 50%; transform: scaleX(0);
+}
+.wow .step-line { transform: scaleX(1); }
+/* Shine (ShinyText spirit): a soft light band crosses primary buttons on hover. */
+.btn.solid, .bundle .btn { position: relative; overflow: hidden; isolation: isolate; }
+.btn.solid::after, .bundle .btn::after {
+  content: ""; position: absolute; inset: -1px; z-index: -1; pointer-events: none;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 248, 238, 0.28) 48%, rgba(255, 248, 238, 0.05) 56%, transparent 70%);
+  transform: translateX(-120%);
+}
+.bundle .btn::after { z-index: 0; mix-blend-mode: soft-light; }
+.btn.soon::after { display: none; }
+/* Bundle background (Aurora/Silk spirit): slow drifting rust light on the ink panel. */
+.bundle { position: relative; overflow: hidden; isolation: isolate; }
+.bundle > * { position: relative; z-index: 1; }
+.bundle::before {
+  content: ""; position: absolute; inset: -30%; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(36% 46% at 18% 28%, rgba(160, 82, 45, 0.55), transparent 70%),
+    radial-gradient(30% 40% at 82% 74%, rgba(217, 163, 127, 0.20), transparent 70%),
+    radial-gradient(28% 36% at 60% 10%, rgba(247, 243, 236, 0.07), transparent 70%);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .btn.solid::after, .bundle .btn::after { transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1); }
+  .btn.solid:hover::after, .bundle .btn:hover::after, .btn.solid:focus-visible::after { transform: translateX(120%); }
+  .hero .btn.solid::after { animation: wow-shine 1.4s cubic-bezier(0.22, 1, 0.36, 1) 1.5s 1 both; }
+  .bundle::before { animation: wow-drift 26s ease-in-out infinite alternate; will-change: transform; }
+  /* BlurText (CSS, no JS needed): hero and product titles settle in word by word on first paint. */
+  .bt .w {
+    animation: wow-blur-in 0.85s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: calc(var(--i, 0) * 60ms + 60ms);
+  }
+  .bt-after { animation: wow-rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.55s backwards; }
+}
+@keyframes wow-blur-in {
+  from { opacity: 0; filter: blur(10px); transform: translateY(-0.28em); }
+  to { opacity: 1; filter: blur(0); transform: none; }
+}
+@keyframes wow-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes wow-shine { from { transform: translateX(-120%); } to { transform: translateX(120%); } }
+@keyframes wow-drift {
+  0% { transform: translate3d(0, 0, 0) rotate(0deg) scale(1); }
+  50% { transform: translate3d(6%, -4%, 0) rotate(8deg) scale(1.08); }
+  100% { transform: translate3d(-5%, 5%, 0) rotate(-6deg) scale(1.02); }
+}
+.pcover { overflow: hidden; }
