@@ -965,3 +965,8 @@ html.lenis { scroll-behavior: auto; }
 }
 .cnote { font-size: 13.5px; color: var(--acc); margin: 12px 0 0; }
 .cnote b { font-weight: 500; letter-spacing: 0.08em; }
+
+/* Canva templates */
+.tlook .look-pages { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 700px) { .tlook .look-pages { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.tcard.feature-t { border-color: var(--acc); }
