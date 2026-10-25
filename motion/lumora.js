@@ -87,7 +87,8 @@
     w.scrollTo(0, 0);
     stopScroll();
     var fill = loader.querySelector(".loader-fill"), num = loader.querySelector(".loader-n");
-    var FILL_MS = 900, t0 = null;
+    /* kept short: the finder is the first thing on the page and should not wait behind the loader */
+    var FILL_MS = 450, t0 = null;
     var step = function (now) {
       if (t0 === null) t0 = now;
       var t = Math.min(1, (now - t0) / FILL_MS);
@@ -97,9 +98,10 @@
       num.textContent = ("00" + p).slice(-3);
       if (t < 1) { w.requestAnimationFrame(step); return; }
       loader.classList.add("out");
+      ready();
       w.setTimeout(function () {
-        loader.remove(); h.classList.remove("intro"); startScroll(); ready();
-      }, 700);
+        loader.remove(); h.classList.remove("intro"); startScroll();
+      }, 450);
     };
     w.requestAnimationFrame(step);
   } else {
