@@ -31,6 +31,7 @@
     meal: "meal recipe", meals: "meal recipe", recipes: "recipe", workout: "training fitness", gym: "fitness training",
     excel: "spreadsheet excel", sheets: "spreadsheet", spreadsheet: "spreadsheet excel", code: "developer coding", coding: "developer code",
     ai: "prompt chatgpt", chatgpt: "prompt", gpt: "prompt chatgpt", canva: "canva template", printable: "printable template",
+    course: "course lesson", courses: "course lesson", lesson: "lesson course", lessons: "lesson course", learn: "course lesson",
     clients: "client", customers: "customer client", logo: "brand identity", branding: "brand identity", brand: "brand"
   };
 
@@ -66,7 +67,7 @@
 
   // Field weights: title and tags count most, then type/category and pitch, then the long text.
   var FIELDS = [["t", 6], ["g", 3.5], ["y", 3], ["p", 3], ["d", 1.5], ["n", 1]];
-  var KIND = { pack: 1, template: 1, set: 0.75, library: 0.55, guide: 0.6 };
+  var KIND = { pack: 1, course: 1, template: 1, set: 0.75, library: 0.55, guide: 0.6 };
   var MAX = 6, MIN_SHOW = 3, MIN_SCORE = 2;
 
   var data = null, loading = null, df = {}, vocab = [], N = 1;
