@@ -860,3 +860,22 @@ html.lenis, html.lenis body { height: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .intro .loader { display: none; }
 }
+
+/* Learn pages (/learn/<model>/) and the /free/ cheat sheet layout */
+.fp-head { margin: 1rem 0 1.5rem; }
+.fp-head h2 { font-size: 1.875rem; margin: 0; }
+.fp-head p { max-width: 40rem; color: rgba(17,17,17,.6); }
+.fp-card h3 { font-size: 1.25rem; line-height: 1.2; margin: 0 0 .4rem; }
+article.guide.learn { padding-bottom: 1rem; }
+article.guide.learn + .fp-list, article.guide.learn + .glist { max-width: 64rem; margin: 0 auto 2rem; }
+article.guide ul.learn-reads { list-style: none; padding: 0; }
+article.guide ul.learn-reads li { border-top: 1px solid var(--line); padding: .9rem 0 .2rem; margin: 0; }
+article.guide ul.learn-reads b { font-weight: 600; }
+.learn-tpl { background: var(--surface); padding: 1.1rem 1.25rem 3.4rem; margin: .75rem 0 1.25rem; }
+article.guide .learn-tpl pre { background: none; padding: 0; margin: 0; border-radius: 0; }
+.learn-tpl pre, .learn-ex pre { font: .8125rem/1.6 ui-monospace, "JetBrains Mono", Menlo, monospace; }
+article.guide.learn .fd-card { margin: 1rem 0 0; }
+article.guide.learn .fd-card a { text-decoration: none; }
+article.guide.learn .fd-card .fd-actions a:not(.btn) { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+article.guide.learn .fd-card h2 { margin-top: 0; color: #fff; }
+.learn-src, ul.learn-src li { font-size: .875rem !important; color: rgba(17,17,17,.6); }
