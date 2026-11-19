@@ -879,3 +879,14 @@ article.guide.learn .fd-card a { text-decoration: none; }
 article.guide.learn .fd-card .fd-actions a:not(.btn) { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 article.guide.learn .fd-card h2 { margin-top: 0; color: #fff; }
 .learn-src, ul.learn-src li { font-size: .875rem !important; color: rgba(17,17,17,.6); }
+.learn-index { margin: 0 0 3rem; }
+.learn-index .row h2 {
+  flex: 1; font-size: 1.5rem; font-weight: 500; letter-spacing: -.01em; margin: 0;
+}
+@media (min-width: 640px) { .learn-index .row h2 { font-size: 1.875rem; } }
+@media (min-width: 768px) { .learn-index .row h2 { font-size: 2.25rem; } }
+.learn-index .row p { display: block; }
+@media (max-width: 1023px) { .learn-index .row { flex-wrap: wrap; align-items: center; } .learn-index .row p { flex: 1 1 100%; order: 5; margin: .35rem 0 0 2.75rem; } }
+.learn-also { margin: 2rem 0 1.25rem; font-size: .875rem; color: rgba(17,17,17,.7); }
+.learn-also a { text-underline-offset: 3px; }
+

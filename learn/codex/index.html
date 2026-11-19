@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to prompt Codex: a calm, practical guide | Carlsson &amp; Co.</title>
+<meta name="description" content="How Codex reads a prompt, according to OpenAI&#x27;s own guide: name the behaviour you want, point to the code, keep your constraints, and say how to verify…">
+<link rel="canonical" href="https://carlssonandcolibrary.se/learn/codex/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Carlsson &amp; Co.">
+<meta property="og:title" content="How to prompt Codex: a calm, practical guide | Carlsson &amp; Co.">
+<meta property="og:description" content="How Codex reads a prompt, according to OpenAI&#x27;s own guide: name the behaviour you want, point to the code, keep your constraints, and say how to verify…">
+<meta property="og:url" content="https://carlssonandcolibrary.se/learn/codex/">
+<meta property="og:image" content="https://carlssonandcolibrary.se/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Carlsson &amp; Co. A library of working prompts.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to prompt Codex: a calm, practical guide | Carlsson &amp; Co.">
+<meta name="twitter:description" content="How Codex reads a prompt, according to OpenAI&#x27;s own guide: name the behaviour you want, point to the code, keep your constraints, and say how to verify…">
+<meta name="twitter:image" content="https://carlssonandcolibrary.se/og.png">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect fill='%230a0a0a' width='48' height='48' rx='12'/%3E%3Cpath fill='%23cf8047' d='M9 14.5c5.2-1.9 10.1-1.2 14.3 1.8v19.4c-4.2-3-9.1-3.7-14.3-1.8Zm30 0c-5.2-1.9-10.1-1.2-14.3 1.8v19.4c4.2-3 9.1-3.7 14.3-1.8Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../../styles.css">
+<script>(function(h){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;h.classList.add('motion');try{if(h.hasAttribute('data-intro')&&!sessionStorage.getItem('cc-intro')){h.classList.add('intro');sessionStorage.setItem('cc-intro','1')}}catch(e){}setTimeout(function(){if(!h.classList.contains('lumora')){h.classList.remove('motion','intro');h.classList.add('is-ready')}},4000)})(document.documentElement)</script>
+<script defer src="../../motion/lenis.min.js"></script>
+<script defer src="../../motion/lumora.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://carlssonandcolibrary.se/"}, {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://carlssonandcolibrary.se/learn/"}, {"@type": "ListItem", "position": 3, "name": "How to prompt Codex", "item": "https://carlssonandcolibrary.se/learn/codex/"}]}, {"@type": "Article", "headline": "How to prompt Codex: a calm, practical guide", "description": "How Codex reads a prompt, according to OpenAI's own guide: name the behaviour you want, point to the code, keep your constraints, and say how to verify the change. With a structure template and six prompts to copy.", "author": {"@type": "Organization", "name": "Carlsson & Co."}, "publisher": {"@type": "Organization", "name": "Carlsson & Co."}, "mainEntityOfPage": "https://carlssonandcolibrary.se/learn/codex/"}]}</script>
+</head>
+<body class="page" data-root="../../">
+<a class="skip" href="#main">Skip to content</a>
+<div class="top" data-page><aside class="cbar" aria-label="Offer"><div class="wrap cbar-inner"><p><span class="cbar-head">30% off everything</span><span class="cbar-with"> with code </span><span class="cbar-sep" aria-hidden="true"> · </span><span class="cbar-code" translate="no">CALM30</span><span class="cbar-note">, applied automatically at checkout</span></p><button type="button" class="cbar-copy" data-code="CALM30"><span class="sr">Copy code CALM30</span><span aria-hidden="true">Copy</span></button><span class="sr" id="cbar-status" aria-live="polite"></span></div></aside><header class="hdr"><div class="shell hdr-in"><a class="brand" href="../../"><svg class="i" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 10.5c7.4-2.7 14.4-1.7 20.4 2.6V41C17.4 36.7 10.4 35.7 3 38.4Zm42 0c-7.4-2.7-14.4-1.7-20.4 2.6V41c6-4.3 13-5.3 20.4-2.6Z"/></svg><span>Carlsson &amp; Co.</span></a><nav class="pnav" aria-label="Primary"><a href="../../#library">Library</a><a href="../../c/templates.html">Templates</a><a href="../../#sets">Sets</a><a href="../../learn/" aria-current="page">Learn</a><a href="../../guides/">Guides</a><a href="../../free/">Free prompts</a><a href="../../about/">About</a></nav><div class="hdr-r"><span class="chip" aria-label="Shop time in Stockholm"><span class="chip-l">Stockholm</span><span class="chip-t" data-clock-t></span><span class="chip-s" aria-hidden="true">&bull;</span><span class="chip-d" data-clock-d>Sweden</span></span><a class="menu-btn" href="#site-menu" role="button" data-menu aria-controls="site-menu" aria-expanded="false"><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Menu</span></a></div></div></header></div>
+<main id="main" data-page>
+<div class="wrap"><article class="guide learn">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="../../">Home</a></li><li><a href="../../learn/">Learn</a></li><li aria-current="page">How to prompt Codex</li></ol></nav>
+<p class="kicker">Learn &middot; Codex</p><h1>How to prompt Codex</h1><p class="lede">Codex is OpenAI's coding agent. It can read your files, run commands in a sandbox and edit code. A useful prompt names the behaviour you want, points to the relevant code or the steps that reproduce a problem, keeps your constraints, and says how to verify the change. Here is how OpenAI's official guide puts it.</p>
+<h2 id="how-codex-reads">How Codex reads a prompt</h2>
+<ul class="learn-reads"><li><b>Name the behaviour, then how to check it.</b> OpenAI's guide says a useful Codex prompt "names the behavior you want, points to the relevant code or reproduction steps, preserves important constraints, and says how to verify the change."</li><li><b>Goal, context, constraints, done when.</b> A good default, from the official best-practices guide, is four parts: the goal (what you want to change or build), the context (which files, folders, documents or errors matter), the constraints (standards or conventions to follow), and "done when" (what should be true before the task is complete, such as tests passing or a bug no longer reproducing).</li><li><b>Plan first for bigger jobs.</b> For a multi-step or unclear task, type /plan so Codex investigates and proposes an approach before it edits anything. When Goal mode is available, you can use /goal after the plan to set a persistent goal.</li><li><b>Reproduction steps beat a vague report.</b> When you want a bug fixed, the reproduction steps and the constraints matter more than a high-level description. Ask Codex to reproduce the problem first, then propose a patch and run checks. After the fix, ask it to run lint and the smallest relevant test suite, and to report the commands and the results.</li><li><b>Point to the files it should see.</b> The IDE extension already includes the files you have open. In the command-line tool, mention paths explicitly, or attach them with @ or /mention.</li><li><b>It works in a sandbox.</b> Codex runs local commands inside a sandbox that limits file and network access. If a task needs to cross that boundary, it follows your approval policy before continuing.</li><li><b>Ask for a review before you commit.</b> Use /review for a second look at your local changes before you commit or open a pull request. On GitHub, when code review is enabled, you can comment @codex review on a pull request, and add a focus such as edge cases or security.</li><li><b>Standing rules go in AGENTS.md.</b> Codex reads AGENTS.md files before it does any work. Put recurring rules there — how to run tests, your conventions, and what "done" means — instead of repeating them in every prompt. There can be a global file in ~/.codex/ and one per project; files closer to the folder you work in override the ones above them. Keep it short and accurate. The /init command can draft a starter file, which you should then edit to match how you actually work.</li></ul>
+<h2 id="template">A structure that works</h2>
+<p>You don't need every part every time. For a small, obvious change, one clear sentence plus a test to run can be enough. For work that matters, this shape covers what OpenAI's guide recommends: the goal, the relevant files or reproduction steps, the constraints, and what "done" looks like. If the job is large or unclear, start with /plan before you ask it to edit anything.</p>
+<div class="fp-box learn-tpl"><pre id="lx-tpl">Goal: [the behaviour I want, or the bug I want fixed]
+
+Context: [paths, files, or the exact steps that reproduce the problem]
+
+Constraints: [what must stay unchanged]
+
+Done when: [how to verify: tests to run, or the behaviour I should see]
+
+After you finish, report the commands you ran and their results.</pre><button type="button" class="fp-copy" data-for="lx-tpl">Copy</button></div>
+<h2 id="examples">Six prompts to copy</h2>
+<p>Replace the [brackets] with your own details. Each prompt shows one of the ideas above.</p>
+</article>
+<div class="fp-list learn-ex"><article class="fp-card"><h3>Fix a bug you can reproduce</h3><p class="fp-use">Reproduction steps and constraints, then a verification step.</p><div class="fp-box"><pre id="lx-1">Bug: The contact form on /contact shows "Message sent" but no email arrives.
+
+Repro:
+1) Start the app: [command, e.g. npm run dev]
+2) Open /contact
+3) Fill in the name, email and message fields
+4) Click Send
+5) The page shows "Message sent", but nothing arrives at [destination inbox]
+
+Constraints:
+- Don't change the form's fields or public URLs.
+- Keep the fix small and add a test if you can.
+
+Start by reproducing the bug locally, then propose a patch and run checks. After the fix, run lint and the smallest relevant test suite. Report the commands and the results.</pre><button type="button" class="fp-copy" data-for="lx-1">Copy</button></div></article><article class="fp-card"><h3>Add a function, with a test</h3><p class="fp-use">Name the behaviour, point to the files, and say what "done" means.</p><div class="fp-box"><pre id="lx-2">Goal: Add monthly_totals() to [path, e.g. reports/sales.py] that reads [path, e.g. data/orders.csv] and returns the total per month.
+
+Context: @[path] @[path]
+The CSV columns are date, customer, amount.
+
+Constraints: Keep the CSV format. Follow the conventions used in the other functions in that file.
+
+Done when: There is a test with three sample rows, the tests have been run, and you have reported the commands and the results.</pre><button type="button" class="fp-copy" data-for="lx-2">Copy</button></div></article><article class="fp-card"><h3>Explain how the code works</h3><p class="fp-use">Point to the files, and ask for something you can check.</p><div class="fp-box"><pre id="lx-3">Goal: Explain how a request flows through this code.
+
+Context: I have the relevant files open. (Or, in the command-line tool: read @[file] and @[file].)
+
+Output:
+- a short summary of what each module involved is responsible for
+- what data is validated, and where
+- one or two things to watch for when changing this
+
+Then summarise the flow as a numbered list of steps, and list the files involved.</pre><button type="button" class="fp-copy" data-for="lx-3">Copy</button></div></article><article class="fp-card"><h3>Update the docs, then check the links</h3><p class="fp-use">A documentation change still needs a way to verify it.</p><div class="fp-box"><pre id="lx-4">Goal: Update the [section name] documentation in @[path] to include [what is missing, e.g. troubleshooting for failed payments].
+
+Constraints: Match the tone and structure of the existing docs. Don't invent features that aren't in the code.
+
+Done when: You have checked that every link on the page is valid, and you have told me which file changed.</pre><button type="button" class="fp-copy" data-for="lx-4">Copy</button></div></article><article class="fp-card"><h3>A small, specific change</h3><p class="fp-use">Iterate in small prompts. If you revert an edit, say so.</p><div class="fp-box"><pre id="lx-5">Goal: Improve only the header on the landing page.
+
+Context: The page is in @[path]. I want it to look calmer on a phone as well as on a wide screen.
+
+Constraints:
+- Change only the header.
+- Keep the current layout and brand colours.
+- If I revert an edit, don't put it back in the next change.
+
+Done when: The header still reads clearly at a mobile width, and you have told me what you changed.</pre><button type="button" class="fp-copy" data-for="lx-5">Copy</button></div></article><article class="fp-card"><h3>Draft a short AGENTS.md</h3><p class="fp-use">Standing rules belong in AGENTS.md, not in every prompt.</p><div class="fp-box"><pre id="lx-6">Goal: Draft a short AGENTS.md for this project, then stop so I can edit it.
+
+Context: Look at how the repo is laid out, and at the scripts in package.json, the Makefile or pyproject.toml.
+
+Output: A short file that covers:
+- how to install and run the project
+- the commands for lint, tests and a production build
+- any conventions you can see in existing code
+- what "done" should mean for a typical change
+
+Constraints: Keep it practical and short. Don't invent commands that aren't in the repo. I'll edit this before we use it as standing rules.
+
+Done when: You have written the draft and listed anything you weren't sure about.</pre><button type="button" class="fp-copy" data-for="lx-6">Copy</button></div></article></div>
+<article class="guide learn">
+<div class="fd-card"><p class="kicker">Free PDF cheat sheet</p><h2>The same task, for ChatGPT, Claude and Codex</h2><p>Codex is one of three. Our free four-page cheat sheet puts the three side by side, with a template for each and an example AGENTS.md for Codex.</p><p class="fd-actions"><a class="btn solid" href="../../free/how-to-prompt-chatgpt-vs-claude-vs-codex.pdf" download>Download the free PDF &darr;</a><a href="../../free/">More free prompts</a></p></div>
+<h2 id="guides">Guides to practise with</h2>
+<p>Our written guides use ChatGPT in the titles, because they started as copy-and-paste prompts. When the job involves a script, a spreadsheet or a change in your code, you can hand the same task to Codex with the shape above.</p>
+</article>
+<div class="glist learn-guides"><a href="../../guides/getting-started-with-ai.html"><span class="kicker">Guide</span><h3>Getting started with AI: a calm beginner's guide</h3><p>What AI and ChatGPT actually are, what a prompt is, how to start for free, and five simple first prompts to try today.</p></a><a href="../../guides/excel-formulas-with-chatgpt.html"><span class="kicker">Guide</span><h3>How to get Excel and Google Sheets formulas from ChatGPT</h3><p>Describe what you want in plain English and get a working formula, an explanation, and a fix when it errors.</p></a><a href="../../guides/reply-to-customer-emails-with-chatgpt.html"><span class="kicker">Guide</span><h3>How to reply to customer emails with ChatGPT, kindly and clearly</h3><p>Draft clear, kind customer replies with AI: set up your policies once, calm upset customers, say no gracefully and build a library of reusable answers.</p></a><a href="../../guides/product-descriptions-that-sell.html"><span class="kicker">Guide</span><h3>How to write product descriptions that sell, with AI prompts</h3><p>A simple structure for product descriptions that lead with the outcome, plus prompts for writing, reviewing and improving your listings.</p></a><a href="../../guides/meeting-notes-with-ai.html"><span class="kicker">Guide</span><h3>How to turn meeting notes into clear action items with AI</h3><p>Prompts for writing a tight agenda, turning messy meeting notes into decisions and action items, and sending a follow-up people actually read.</p></a></div>
+<article class="guide learn">
+<p class="learn-also">Also in Learn: <a href="../../learn/chatgpt/">How to prompt ChatGPT</a> &middot; <a href="../../learn/claude/">How to prompt Claude</a> &middot; <a href="../../learn/">All guides</a></p>
+<h2 id="sources">Sources</h2>
+<p class="learn-src">This page sums up OpenAI's official Codex prompting guide, as of November 2026. Models and features change, so check the guide for the latest details. Carlsson &amp; Co. is independent and not affiliated with OpenAI.</p>
+<ul class="learn-src"><li><a href="https://developers.openai.com/codex/prompting" rel="noopener">OpenAI, Prompting: write useful prompts for Chat, ChatGPT Work, and Codex</a></li><li><a href="https://developers.openai.com/codex/guides/agents-md" rel="noopener">OpenAI, Custom instructions with AGENTS.md</a></li><li><a href="https://learn.chatgpt.com/guides/best-practices" rel="noopener">OpenAI, Best practices for Codex</a></li></ul>
+</article></div>
+</main>
+<footer class="foot" data-page><div class="shell foot-in"><div class="foot-cta"><h2 class="lr"><span class="ln" style="--li:0;--ls:100ms;--d:0ms"><span>Questions about a pack?</span></span><span class="ln" style="--li:1;--ls:100ms;--d:0ms"><span>Just write to us.</span></span></h2><a class="pill light arrow" href="mailto:carlsson.co@mail.grokbot.com"><span>Email us</span><span class="badge"><svg class="i ur" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div><div class="foot-cols"><div class="foot-brand"><a class="brand" href="../../"><svg class="i" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 10.5c7.4-2.7 14.4-1.7 20.4 2.6V41C17.4 36.7 10.4 35.7 3 38.4Zm42 0c-7.4-2.7-14.4-1.7-20.4 2.6V41c6-4.3 13-5.3 20.4-2.6Z"/></svg><span>Carlsson &amp; Co.</span></a><p>A small library of working prompts and calm Canva templates, made in Sweden. Write to <a href="mailto:carlsson.co@mail.grokbot.com">carlsson.co@mail.grokbot.com</a>.</p></div><div class="foot-col"><h3>Shop</h3><ul><li><a href="../../c/">Prompt packs</a></li><li><a href="../../c/templates.html">Canva templates</a></li><li><a href="../../#sets">Sets</a></li><li><a href="../../p/complete-library/">The Complete Library</a></li><li><a href="../../free/">Free prompts</a></li><li><a href="../../monday/">Monday prompts</a></li></ul></div><div class="foot-col"><h3>Help</h3><ul><li><a href="mailto:carlsson.co@mail.grokbot.com">Contact</a></li><li><a href="../../c/templates.html#how-templates">What you can edit</a></li><li><a href="../../#faq">Questions</a></li><li><a href="../../guides/">Guides</a></li><li><a href="../../learn/">Learn to prompt</a></li><li><a href="../../about/">About the shop</a></li></ul></div><div class="foot-col"><h3>Social</h3><ul><li><a href="https://www.instagram.com/carlssonandcolibrary/">Instagram</a></li><li><a href="https://www.tiktok.com/@carlssonandcolibrary">TikTok</a></li><li><a href="mailto:carlsson.co@mail.grokbot.com">Email</a></li></ul></div></div><div class="legal"><span>&copy; 2026 Carlsson &amp; Co. All prices in USD.</span><span>Checkout and delivery handled securely by Gumroad.</span></div></div><div class="wm" aria-hidden="true">CARLSSON</div></footer>
+<div class="nm" id="site-menu" role="dialog" aria-modal="true" aria-label="Menu"><div class="shell nm-top"><a class="brand" href="../../"><svg class="i" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3 10.5c7.4-2.7 14.4-1.7 20.4 2.6V41C17.4 36.7 10.4 35.7 3 38.4Zm42 0c-7.4-2.7-14.4-1.7-20.4 2.6V41c6-4.3 13-5.3 20.4-2.6Z"/></svg><span>Carlsson &amp; Co.</span></a><a class="nm-x" href="#main" role="button" data-menu-close><svg class="i" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4l16 16M20 4 4 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>Close</span></a></div><nav class="shell nm-nav" aria-label="Site"><ul><li><a href="../../" style="--n:1"><small>01</small><span>Home</span></a></li><li><a href="../../#library" style="--n:2"><small>02</small><span>Library</span></a></li><li><a href="../../c/" style="--n:3"><small>03</small><span>Categories</span></a></li><li><a href="../../c/templates.html" style="--n:4"><small>04</small><span>Canva templates</span></a></li><li><a href="../../#sets" style="--n:5"><small>05</small><span>Sets</span></a></li><li><a href="../../learn/" style="--n:6" aria-current="page"><small>06</small><span>Learn to prompt</span></a></li><li><a href="../../guides/" style="--n:7"><small>07</small><span>Guides</span></a></li><li><a href="../../free/" style="--n:8"><small>08</small><span>Free prompts</span></a></li><li><a href="../../about/" style="--n:9"><small>09</small><span>About</span></a></li><li><a href="../../#faq" style="--n:10"><small>10</small><span>Questions</span></a></li><li><a href="mailto:carlsson.co@mail.grokbot.com" style="--n:11"><small>11</small><span>Contact</span></a></li></ul></nav><div class="shell nm-bot"><span>Stockholm time &mdash; <span data-clock-t></span></span><span class="soc"><a href="https://www.instagram.com/carlssonandcolibrary/" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@carlssonandcolibrary" rel="noopener">TikTok</a><a href="mailto:carlsson.co@mail.grokbot.com">Email us &rarr;</a></span></div></div>
+<script>document.querySelectorAll('.fp-copy').forEach(function(b){b.addEventListener('click',function(){var t=document.getElementById(b.dataset.for).textContent;var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1600)};if(navigator.clipboard){navigator.clipboard.writeText(t).then(done)}else{var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();done()}})});</script>
+<script>
+(function () {
+  var copy = document.querySelector(".cbar-copy");
+  if (copy && navigator.clipboard && window.isSecureContext) {
+    copy.classList.add("is-ready");
+    copy.addEventListener("click", function () {
+      var code = copy.getAttribute("data-code");
+      var status = document.getElementById("cbar-status");
+      navigator.clipboard.writeText(code).then(function () {
+        copy.classList.add("is-done");
+        copy.lastChild.textContent = "Copied";
+        if (status) status.textContent = "Code " + code + " copied.";
+        setTimeout(function () { copy.classList.remove("is-done"); copy.lastChild.textContent = "Copy"; }, 2200);
+      }).catch(function () {});
+    });
+  }
+})();
+
+(function () {
+  var lib = document.getElementById("lib");
+  if (lib) {
+    var cat = "all";
+    var onlyAvail = false;
+    var touched = false;
+    var query = document.getElementById("q");
+    var buttons = Array.prototype.slice.call(document.querySelectorAll(".filters [data-c]"));
+    var avail = document.querySelector(".filters [data-av]");
+    var allcard = document.getElementById("allcard");
+    var none = document.getElementById("none");
+    var status = document.getElementById("status");
+
+    function run() {
+      var words = query.value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      var shown = 0;
+      lib.querySelectorAll(".card[data-cat]").forEach(function (card) {
+        var text = card.getAttribute("data-q") || "";
+        var ok = (cat === "all" || card.getAttribute("data-cat") === cat)
+          && (!onlyAvail || card.getAttribute("data-av") === "1")
+          && words.every(function (word) { return text.indexOf(word) !== -1; });
+        card.hidden = !ok;
+        if (ok) shown += 1;
+      });
+      if (allcard) allcard.hidden = !(cat === "all" && words.length === 0 && !onlyAvail);
+      if (none) none.hidden = shown !== 0;
+      if (status && touched) {
+        status.textContent = shown === 0
+          ? "No packs match."
+          : shown + (shown === 1 ? " pack shown." : " packs shown.");
+      }
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        touched = true;
+        cat = button.getAttribute("data-c");
+        buttons.forEach(function (other) {
+          var on = other === button;
+          other.classList.toggle("on", on);
+          other.setAttribute("aria-pressed", on ? "true" : "false");
+        });
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, "", cat === "all" ? window.location.pathname + window.location.search : "#cat=" + cat);
+        }
+        run();
+      });
+    });
+    if (query) query.addEventListener("input", function () { touched = true; run(); });
+    if (avail) {
+      avail.addEventListener("click", function () {
+        touched = true;
+        onlyAvail = !onlyAvail;
+        avail.classList.toggle("on", onlyAvail);
+        avail.setAttribute("aria-pressed", onlyAvail ? "true" : "false");
+        run();
+      });
+    }
+    var hash = window.location.hash.match(/^#cat=([a-z0-9-]+)$/);
+    if (hash) {
+      var initial = buttons.filter(function (button) {
+        return button.getAttribute("data-c") === hash[1];
+      })[0];
+      if (initial) initial.click();
+    }
+  }
+
+  var dialog = document.getElementById("pv");
+  var dataEl = document.getElementById("preview-data");
+  if (!dialog || !dataEl) return;
+
+  var previews = JSON.parse(dataEl.textContent);
+  var opener = null;
+  var title = document.getElementById("pv-title");
+  var pitch = document.getElementById("pv-pitch");
+  var list = document.getElementById("pv-list");
+  var meta = document.getElementById("pv-meta");
+  var buy = document.getElementById("pv-buy");
+  var soon = document.getElementById("pv-soon");
+  var more = document.getElementById("pv-more");
+  var root = document.body.getAttribute("data-root") || "./";
+
+  function openPreview(slug, trigger) {
+    var item = previews[slug];
+    if (!item) return;
+    title.textContent = item.t;
+    pitch.textContent = item.q.length + " of the " + item.n + " prompts in this pack";
+    list.replaceChildren();
+    item.q.forEach(function (row) {
+      var li = document.createElement("li");
+      var name = document.createElement("b");
+      var text = document.createElement("p");
+      name.textContent = row[0];
+      text.textContent = row[1];
+      li.append(name, text);
+      list.append(li);
+    });
+    meta.textContent = item.n + " prompts in the PDF.";
+    more.href = root + "p/" + slug + "/";
+    if (item.u) {
+      buy.href = item.u;
+      buy.textContent = "Buy · $" + item.p;
+      buy.setAttribute("data-buy", slug);
+      buy.hidden = false;
+      soon.hidden = true;
+    } else {
+      buy.hidden = true;
+      buy.removeAttribute("href");
+      soon.hidden = false;
+    }
+    opener = trigger || null;
+    dialog.showModal();
+    var closeButton = dialog.querySelector(".x");
+    if (closeButton) closeButton.focus();
+  }
+
+  document.addEventListener("click", function (event) {
+    var button = event.target.closest(".prev");
+    if (!button) return;
+    openPreview(button.getAttribute("data-p"), button);
+  });
+  dialog.querySelector(".x").addEventListener("click", function () { dialog.close(); });
+  dialog.addEventListener("click", function (event) {
+    if (event.target === dialog) dialog.close();
+  });
+  dialog.addEventListener("close", function () {
+    if (opener) opener.focus();
+  });
+})();
+
+</script>
+<script data-goatcounter="https://carlssonandco.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
