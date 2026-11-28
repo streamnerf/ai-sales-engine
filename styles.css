@@ -899,3 +899,8 @@ article.guide.learn .fd-card h2 { margin-top: 0; color: #fff; }
 article.guide .lesson-checklist { list-style: none; padding: 0; }
 .learn-lesson .lesson-checklist label { display: flex; align-items: baseline; gap: .625rem; }
 .learn-lesson .lesson-checklist input { flex-shrink: 0; accent-color: var(--ink); }
+
+/* Free editorial pages reuse catalog mini cards for their next step. */
+.go-further .mini { overflow-wrap: anywhere; }
+.go-further-browse { margin-top: 1.25rem; font-size: .875rem; }
+.go-further-browse a { text-decoration: underline; text-underline-offset: 3px; }
